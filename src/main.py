@@ -1,20 +1,62 @@
-from src.power import power_function
-from src.constants import SAMPLE_CONSTANT
+from src.goose import WarGoose, HonkGoose
+from src.player import Player
+from src.casino import Casino, GooseLedger
+import string
 
+"""
+Задача - сделать свой турнир.
+Придумать самому, какие методы и поля есть у Гуся, Игрока, Казино
+КРЕАТИВНЫЙ КАЗИК! - ДОП БАЛЛЫ.
+Гуси - коллекторское агенство.
+- Функция симулятор должна быть
 
-def main() -> None:
-    """
-    Обязательнная составляющая программ, которые сдаются. Является точкой входа в приложение
-    :return: Данная функция ничего не возвращает
-    """
+Пользователь может:
+- поставить на паузу
+- добавить денег
+- добавить урон/гусей
+"""
+def run_simulation(steps: int = 20, seed: int | None = None) -> None:
+    gus = WarGoose(name="Gus", hp=40, honk_volume=2)
+    boba = HonkGoose(name="Boba", hp=30, honk_volume=3)
+    jack = Player(name="Jack", balance=128)
+    mia = Player(name="Mia", balance=239)
 
-    target, degree = map(int, input("Введите два числа разделенные пробелом: ").split(" "))
+    goose_ledger = GooseLedger()
 
-    result = power_function(target=target, power=degree)
+    casino = Casino(players=[jack, mia], gooses=[gus, boba], ledger=goose_ledger)
+    casino.register_goose(gus)
+    casino.register_goose(boba)
 
-    print(result)
+    casino.show_state()
 
-    print(SAMPLE_CONSTANT)
+    # Объединяем гусей в "стак" (демонстрация __add__)
+    flock = gus + boba
+    casino.register_goose(flock)
+
+    # WarGoose атакует Jack напрямую
+    gus.attack(jack)
+    casino.balances["Jack"] = jack.balance
+
+    # Boba использует __call__, чтобы усилить HONK
+    boba(2)
+
+    # Стая ворует фишки у игроков
+    casino.steal_from_player(flock, player_name="Jack", amount=25)
+    casino.steal_from_player(flock, player_name="Mia", amount=40)
+
+    casino.show_state()
+    
 
 if __name__ == "__main__":
-    main()
+    print("=== Goose & Casino Simulation ===")
+    steps = ""
+    while not steps.isdigit():
+        steps = input("How much steps of simulation do you want?: ")
+    steps = int(steps)
+        
+    seed = ""
+    while not seed.isdigit():
+        seed = input("Write seed (number): ")
+    seed = int(seed)
+
+    run_simulation(steps, seed)
