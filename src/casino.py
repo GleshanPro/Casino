@@ -1,8 +1,9 @@
 from src.player import Player
 from src.goose import Goose
+from loguru import logger
 
 from collections import UserDict
-from dataclasses import dataclass
+# from dataclasses import dataclass
 
 """
 ПЛОХО - наследовать от базовых типов
@@ -11,11 +12,20 @@ class CasinoBalance(dict):
     ...
 """
 
+# class ...(UserList)
+
 # UserDict - определена нужная база (см. исходный код)
 class CasinoBalance(UserDict):
     def __setitem__(self, key: str, value: int):
+        logger.info(f"[CasinoBalance] {key} balance -> {value}")
         print(f"[CasinoBalance] {key} balance -> {value}")
         super().__setitem__(key, value)
+        
+        
+    def __iter__(self):
+        return iter(self.data)
+        
+        
         
 class GooseLedger(UserDict):
     def __setitem__(self, key: str, value: int):
@@ -65,6 +75,7 @@ class Chip[T]:
     
     def __add__(self, other: T) -> T:
         if not isinstance(other, Chip | int):
+            logger.error("Tried to add Chip to incompatible type")
             return NotImplemented
         
         amount = self.amount
@@ -81,6 +92,7 @@ class Chip[T]:
         
     def __eq__(self, other: T | int) -> bool:
         if not isinstance(other, Chip | int):
+            logger.error("Tried to compare Chip to incompatible type")
             return NotImplemented
         
         if isinstance(other, int):

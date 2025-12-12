@@ -1,7 +1,9 @@
 from src.goose import WarGoose, HonkGoose
 from src.player import Player
 from src.casino import Casino, GooseLedger
+from loguru import logger
 import string
+import sys
 
 """
 Задача - сделать свой турнир.
@@ -16,6 +18,8 @@ import string
 - добавить урон/гусей
 """
 def run_simulation(steps: int = 20, seed: int | None = None) -> None:
+    logger.info(f"Started simulation with parameters: steps={steps}, seed={seed}")
+    
     gus = WarGoose(name="Gus", hp=40, honk_volume=2)
     boba = HonkGoose(name="Boba", hp=30, honk_volume=3)
     jack = Player(name="Jack", balance=128)
@@ -46,8 +50,15 @@ def run_simulation(steps: int = 20, seed: int | None = None) -> None:
 
     casino.show_state()
     
+    
+def setup_logger():
+    logger.remove()
+    logger.add("out.log")
+    # logger.add("program.log", colorize=True, format="<green>{time}</green> <level>{message}</level>", filter="my_module", level="INFO")
 
 if __name__ == "__main__":
+    setup_logger()
+    
     print("=== Goose & Casino Simulation ===")
     steps = ""
     while not steps.isdigit():
@@ -60,3 +71,5 @@ if __name__ == "__main__":
     seed = int(seed)
 
     run_simulation(steps, seed)
+    
+    

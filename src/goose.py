@@ -15,7 +15,8 @@ class Goose:
     honk_volume: int = 1
     
     def honk(self) -> None:
-        print(f"{self.name} honks " + "HONK: " + self.honk_volume)
+        # target - one player, not many
+        print(f"{self.name} honks " + "HONK: ", self.honk_volume)
         
 
     def attack(self, target: Player, damage: int) -> None:
@@ -27,6 +28,7 @@ class Goose:
         hp = self.hp + other.hp
         honk_volume = self.honk_volume + other.honk_volume
         print(f"Flock formed: {name} (hp={hp}), honk_volume={honk_volume}")
+        return Goose(name, hp, honk_volume)
         
     def __repr__(self) -> str:
         return f"Goose(name={self.name!r}, hp={self.hp}, honk_volume={self.honk_volume})"
