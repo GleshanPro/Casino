@@ -54,7 +54,18 @@ def run_simulation(steps: int = 20, seed: int | None = None) -> None:
 def setup_logger():
     logger.remove()
     logger.add("out.log")
-    # logger.add("program.log", colorize=True, format="<green>{time}</green> <level>{message}</level>", filter="my_module", level="INFO")
+    # logger.add(
+    #     "out.log",
+    #     format="{time:YYYY-MM-DD HH:mm:ss:ms} | {level} | {message}",
+    #     level="INFO"
+    # )
+    # logger.add(
+    #     "out.log",
+    #     colorize=True,
+    #     format="{time:YYYY-MM-DD HH:mm:ss:ms} | ***{level}*** | {message}",
+    #     level="ERROR",
+    # )
+    
 
 if __name__ == "__main__":
     setup_logger()

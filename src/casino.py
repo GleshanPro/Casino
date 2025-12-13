@@ -1,37 +1,11 @@
-from src.player import Player
-from src.goose import Goose
 from loguru import logger
 
-from collections import UserDict
-# from dataclasses import dataclass
+from src.player import Player
+from src.goose import Goose
 
-"""
-ПЛОХО - наследовать от базовых типов
+from src.collections.casino_balance import CasinoBalance
+from src.collections.goose_ledger import GooseLedger
 
-class CasinoBalance(dict): 
-    ...
-"""
-
-# class ...(UserList)
-
-# UserDict - определена нужная база (см. исходный код)
-class CasinoBalance(UserDict):
-    def __setitem__(self, key: str, value: int):
-        logger.info(f"[CasinoBalance] {key} balance -> {value}")
-        print(f"[CasinoBalance] {key} balance -> {value}")
-        super().__setitem__(key, value)
-        
-        
-    def __iter__(self):
-        return iter(self.data)
-        
-        
-        
-class GooseLedger(UserDict):
-    def __setitem__(self, key: str, value: int):
-        print(f"[GooseLedger] {key} balance -> {value}")
-        super().__setitem__(key, value)
-    
 
 class Casino:
     def __init__(self, players: list[Player], gooses: list[Goose], ledger: GooseLedger | None) -> None:

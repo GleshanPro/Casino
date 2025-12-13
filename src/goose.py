@@ -1,3 +1,5 @@
+from loguru import logger
+
 from dataclasses import dataclass
 
 from src.player import Player
@@ -24,6 +26,10 @@ class Goose:
     
     
     def __add__(self, other: "Goose") -> "Goose":
+        if not isinstance(other, Goose):
+            logger.error("Tried to make flock out of Goose and some incompatible type")
+            return NotImplemented
+        
         name = f"{self.name}-{other.name}"
         hp = self.hp + other.hp
         honk_volume = self.honk_volume + other.honk_volume
@@ -39,6 +45,8 @@ class WarGoose(Goose):
         damage = damage or random.randint(8, 20)
         print(f"[WarGoose] {self.name} viciously attacks {target.name} for {damage} damage!")
         
+        # logger.info(f"[WarGoose] {self.name} attacks {target.name} for {damage} damage")
+        
 
 class HonkGoose(Goose):
     def __call__(self, times: int | None = None) -> None:
@@ -46,5 +54,7 @@ class HonkGoose(Goose):
         self.honk_volume += time
         print(f"{self.name} prepares a mega-honk x{times}!")
         self.honk()
+        
+        # logger.info(f"[HonkGoose] {self.name} called")
         
         
