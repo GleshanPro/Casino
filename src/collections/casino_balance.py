@@ -1,55 +1,45 @@
 from collections import UserDict
-from src.log_calls import log_calls
+from src.entities.chip import Chip
+from src.collections.chip_collection import ChipCollection
 
-# from dataclasses import dataclass
+class CasinoBalance(UserDict):
+    """
+    Dict-like collection for ChipCollection objects.
+    Supports iteration and element manipulation
+    """
 
-"""
-ПЛОХО - наследовать от базовых типов
 
-class CasinoBalance(dict): 
-    ...
-"""
-
-class CasinoBalance(UserDict): 
-    
-    @log_calls
-    def __setitem__(self, key: str, value: int):
-        # Декоратор сделать
-        # logger.info(f"[CasinoBalance] {key} balance -> {value}")
-        print(f"[CasinoBalance] {key} balance -> {value}")
+    def __setitem__(self, key: str, value: ChipCollection):
         super().__setitem__(key, value)
-        
-    @log_calls
+
     def __getitem__(self, key):
         return super().__getitem__(key)
-    
-    @log_calls
+
     def __iter__(self):
         return iter(self.data)
-    
-    @log_calls
+
     def __len__(self):
         return len(self.data)
-    
-    @log_calls
-    def add_money(self, key: str, amount: int):
+
+    def add_money(self, key: str, chip: Chip):
         """
         :param key: Name of player whose balance will be updated
         :type key: str
         :param amount: Amount of money to add
         :type amount: int
         """
-        self.data[key] += amount
-        
-    @log_calls
-    def remove_money(self, key: str, amount: int):
+        self.data[key].append(chip)
+
+    def remove_money(self, key: str, chip: int):
         """
         :param key: Name of player whose balance will be updated
         :type key: str
         :param amount: Amount of money to remove
         :type amount: int
         """
-        if (self.data[key] - amount < 0):
-            ...
+        if key not in self.data:
+            raise KeyError(f"Player {key} not found in balance")
+        if (self.data[key] - chip < 0):
+            self.data[key] = 0
             return
-        self.data[key] -= amount
+        self.data[key].remove(chip)

@@ -1,55 +1,526 @@
-2025-12-13 15:00:34.667 | INFO     | __main__:run_simulation:21 - Started simulation with parameters: steps=1, seed=1
-2025-12-13 15:00:34.667 | INFO     | src.log_calls:wrapper:7 - [CALL] __setitem__(({}, 'Jack', 128), {})
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __setitem__(({'Jack': 128}, 'Mia', 239), {})
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __iter__(({'Jack': 128, 'Mia': 239},), {})
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __iter__ -> <dict_keyiterator object at 0x7b6b03572ca0>
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __getitem__(({'Jack': 128, 'Mia': 239}, 'Jack'), {})
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 128
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __getitem__(({'Jack': 128, 'Mia': 239}, 'Mia'), {})
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 239
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __setitem__(({'Jack': 128, 'Mia': 239}, 'Jack', 128), {})
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __getitem__(({'Jack': 128, 'Mia': 239}, 'Jack'), {})
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 128
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __setitem__(({'Jack': 128, 'Mia': 239}, 'Jack', 103), {})
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __getitem__(({'Jack': 103, 'Mia': 239}, 'Mia'), {})
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 239
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __setitem__(({'Jack': 103, 'Mia': 239}, 'Mia', 199), {})
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __iter__(({'Jack': 103, 'Mia': 199},), {})
-2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __iter__ -> <dict_keyiterator object at 0x7b6b03572ca0>
-2025-12-13 15:00:34.669 | INFO     | src.log_calls:wrapper:7 - [CALL] __getitem__(({'Jack': 103, 'Mia': 199}, 'Jack'), {})
-2025-12-13 15:00:34.669 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 103
-2025-12-13 15:00:34.669 | INFO     | src.log_calls:wrapper:7 - [CALL] __getitem__(({'Jack': 103, 'Mia': 199}, 'Mia'), {})
-2025-12-13 15:00:34.669 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 199
-2025-12-13 15:01:03.104 | INFO     | __main__:run_simulation:21 - Started simulation with parameters: steps=1, seed=1
-2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __setitem__(({}, 'Jack', 128), {})
-2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
-2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __setitem__(({'Jack': 128}, 'Mia', 239), {})
-2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
-2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __iter__(({'Jack': 128, 'Mia': 239},), {})
-2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:9 - [RET] __iter__ -> <dict_keyiterator object at 0x7cdc02c72c50>
-2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __getitem__(({'Jack': 128, 'Mia': 239}, 'Jack'), {})
-2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 128
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __getitem__(({'Jack': 128, 'Mia': 239}, 'Mia'), {})
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 239
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __setitem__(({'Jack': 128, 'Mia': 239}, 'Jack', 128), {})
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __getitem__(({'Jack': 128, 'Mia': 239}, 'Jack'), {})
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 128
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __setitem__(({'Jack': 128, 'Mia': 239}, 'Jack', 103), {})
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __getitem__(({'Jack': 103, 'Mia': 239}, 'Mia'), {})
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 239
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __setitem__(({'Jack': 103, 'Mia': 239}, 'Mia', 199), {})
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __iter__(({'Jack': 103, 'Mia': 199},), {})
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __iter__ -> <dict_keyiterator object at 0x7cdc02c72c50>
-2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __getitem__(({'Jack': 103, 'Mia': 199}, 'Jack'), {})
-2025-12-13 15:01:03.106 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 103
-2025-12-13 15:01:03.106 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __getitem__(({'Jack': 103, 'Mia': 199}, 'Mia'), {})
-2025-12-13 15:01:03.106 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 199
-2025-12-13 15:02:51.051 | INFO     | __main__:run_simulation:21 - Started simulation with parameters: steps=1, seed=1
+2025-12-13 23:51:41.733 | INFO     | src.simulation.run_simulation:run_simulation:21 - Random seed set to 2
+2025-12-13 23:51:41.734 | INFO     | src.simulation.run_simulation:run_simulation:23 - Started simulation with parameters: steps=200, seed=2
+2025-12-13 23:51:41.735 | INFO     | src.simulation.casino:register_player:130 - Registered player, name=Олег
+2025-12-13 23:51:41.735 | INFO     | src.simulation.casino:register_player:130 - Registered player, name=Макс
+2025-12-13 23:51:41.735 | INFO     | src.simulation.casino:register_player:130 - Registered player, name=Кира
+2025-12-13 23:51:41.735 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Биба
+2025-12-13 23:51:41.735 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба
+2025-12-13 23:51:41.735 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба
+2025-12-13 23:51:41.735 | INFO     | src.simulation.casino:__init__:29 - Initialized Casino object.
+2025-12-13 23:51:41.737 | INFO     | src.simulation.casino:show_state:350 - Showed state.
+2025-12-13 23:51:41.737 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (53) from balance of Олег. Current balance: 447
+2025-12-13 23:51:41.738 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(5300) to balance of Олег
+2025-12-13 23:51:41.738 | INFO     | src.simulation.casino:bet:194 - [JACKPOT] Player Олег got Jackpot and won 5300
+2025-12-13 23:51:41.738 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 500
+2025-12-13 23:51:41.738 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (500) from balance of Макс. Current balance: 500
+2025-12-13 23:51:41.738 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=4
+2025-12-13 23:51:41.739 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.739 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (20) from balance of Олег. Current balance: 5727
+2025-12-13 23:51:41.739 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (20) from balance of Макс. Current balance: 480
+2025-12-13 23:51:41.739 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (20) from balance of Кира. Current balance: 9980
+2025-12-13 23:51:41.739 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(60) to balance of Боба (Goose)
+2025-12-13 23:51:41.739 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 60 from each player
+2025-12-13 23:51:41.740 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Биба (hp=140), honk_volume=5
+2025-12-13 23:51:41.740 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба-Биба
+2025-12-13 23:51:41.740 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба-Биба trying to steal 37 from player Кира
+2025-12-13 23:51:41.740 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (37) from balance of Кира. Current balance: 9943
+2025-12-13 23:51:41.740 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(37) to balance of Буба-Биба (Goose)
+2025-12-13 23:51:41.741 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Буба-Биба stole 37 from Кира.
+2025-12-13 23:51:41.741 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=7
+2025-12-13 23:51:41.741 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.741 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (35) from balance of Олег. Current balance: 5692
+2025-12-13 23:51:41.741 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (35) from balance of Макс. Current balance: 445
+2025-12-13 23:51:41.742 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (35) from balance of Кира. Current balance: 9908
+2025-12-13 23:51:41.742 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(105) to balance of Боба (Goose)
+2025-12-13 23:51:41.742 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 105 from each player
+2025-12-13 23:51:41.742 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (2992) from balance of Олег. Current balance: 2700
+2025-12-13 23:51:41.742 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(4727.404646326929) to balance of Олег
+2025-12-13 23:51:41.742 | INFO     | src.simulation.casino:bet:200 - [WIN] Player Олег won 4727
+2025-12-13 23:51:41.743 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба (hp=130), honk_volume=10
+2025-12-13 23:51:41.743 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба
+2025-12-13 23:51:41.743 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Олег for 8 damage
+2025-12-13 23:51:41.743 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (8) from balance of Олег. Current balance: 7419
+2025-12-13 23:51:41.743 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(8) to balance of Биба (Goose)
+2025-12-13 23:51:41.744 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Олег for 10 damage
+2025-12-13 23:51:41.744 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (10) from balance of Олег. Current balance: 7409
+2025-12-13 23:51:41.744 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(10) to balance of Биба (Goose)
+2025-12-13 23:51:41.744 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба (hp=230), honk_volume=13
+2025-12-13 23:51:41.744 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба
+2025-12-13 23:51:41.744 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба-Боба-Буба (hp=360), honk_volume=23
+2025-12-13 23:51:41.744 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба-Боба-Буба
+2025-12-13 23:51:41.745 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Макс for 19 damage
+2025-12-13 23:51:41.745 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (19) from balance of Макс. Current balance: 426
+2025-12-13 23:51:41.745 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(19) to balance of Биба (Goose)
+2025-12-13 23:51:41.746 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба-Боба-Буба-Буба (hp=460), honk_volume=26
+2025-12-13 23:51:41.746 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба-Боба-Буба-Буба
+2025-12-13 23:51:41.746 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба-Буба (hp=330), honk_volume=16
+2025-12-13 23:51:41.747 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба-Буба
+2025-12-13 23:51:41.747 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба trying to steal 34 from player Макс
+2025-12-13 23:51:41.747 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (34) from balance of Макс. Current balance: 392
+2025-12-13 23:51:41.747 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(34) to balance of Буба (Goose)
+2025-12-13 23:51:41.747 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Буба stole 34 from Макс.
+2025-12-13 23:51:41.748 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба (hp=600), honk_volume=31
+2025-12-13 23:51:41.748 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба
+2025-12-13 23:51:41.748 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=10
+2025-12-13 23:51:41.748 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.748 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (50) from balance of Олег. Current balance: 7359
+2025-12-13 23:51:41.749 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (50) from balance of Макс. Current balance: 342
+2025-12-13 23:51:41.749 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (50) from balance of Кира. Current balance: 9858
+2025-12-13 23:51:41.749 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(150) to balance of Боба (Goose)
+2025-12-13 23:51:41.749 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 150 from each player
+2025-12-13 23:51:41.749 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 171
+2025-12-13 23:51:41.750 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (171) from balance of Макс. Current balance: 171
+2025-12-13 23:51:41.750 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба trying to steal 40 from player Кира
+2025-12-13 23:51:41.750 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (40) from balance of Кира. Current balance: 9818
+2025-12-13 23:51:41.750 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(40) to balance of Боба-Буба-Буба (Goose)
+2025-12-13 23:51:41.750 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба-Буба stole 40 from Кира.
+2025-12-13 23:51:41.751 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Боба-Буба-Буба trying to steal 19 from player Кира
+2025-12-13 23:51:41.751 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (19) from balance of Кира. Current balance: 9799
+2025-12-13 23:51:41.751 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(19) to balance of Боба-Буба-Буба-Боба-Буба-Буба (Goose)
+2025-12-13 23:51:41.751 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба-Буба-Боба-Буба-Буба stole 19 from Кира.
+2025-12-13 23:51:41.751 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=13
+2025-12-13 23:51:41.752 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.752 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (65) from balance of Олег. Current balance: 7294
+2025-12-13 23:51:41.752 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (65) from balance of Макс. Current balance: 106
+2025-12-13 23:51:41.752 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (65) from balance of Кира. Current balance: 9734
+2025-12-13 23:51:41.752 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(195) to balance of Боба (Goose)
+2025-12-13 23:51:41.752 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 195 from each player
+2025-12-13 23:51:41.753 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба trying to steal 37 from player Макс
+2025-12-13 23:51:41.753 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (37) from balance of Макс. Current balance: 69
+2025-12-13 23:51:41.753 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(37) to balance of Боба-Буба (Goose)
+2025-12-13 23:51:41.753 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба stole 37 from Макс.
+2025-12-13 23:51:41.754 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба (hp=690), honk_volume=39
+2025-12-13 23:51:41.754 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба
+2025-12-13 23:51:41.754 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=17
+2025-12-13 23:51:41.754 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.754 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (85) from balance of Олег. Current balance: 7209
+2025-12-13 23:51:41.754 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (69) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.755 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (85) from balance of Кира. Current balance: 9649
+2025-12-13 23:51:41.755 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(239) to balance of Боба (Goose)
+2025-12-13 23:51:41.755 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 239 from each player
+2025-12-13 23:51:41.756 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба (hp=830), honk_volume=44
+2025-12-13 23:51:41.756 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба
+2025-12-13 23:51:41.756 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 3604
+2025-12-13 23:51:41.756 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (3604) from balance of Олег. Current balance: 3605
+2025-12-13 23:51:41.757 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Олег for 17 damage
+2025-12-13 23:51:41.757 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (17) from balance of Олег. Current balance: 3588
+2025-12-13 23:51:41.757 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(17) to balance of Биба (Goose)
+2025-12-13 23:51:41.758 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 1794
+2025-12-13 23:51:41.758 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (1794) from balance of Олег. Current balance: 1794
+2025-12-13 23:51:41.758 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=18
+2025-12-13 23:51:41.758 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.758 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (90) from balance of Олег. Current balance: 1704
+2025-12-13 23:51:41.759 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (90) from balance of Кира. Current balance: 9559
+2025-12-13 23:51:41.759 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(180) to balance of Боба (Goose)
+2025-12-13 23:51:41.759 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 180 from each player
+2025-12-13 23:51:41.760 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Боба-Буба (hp=230), honk_volume=13
+2025-12-13 23:51:41.760 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба-Боба-Буба
+2025-12-13 23:51:41.760 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Олег for 14 damage
+2025-12-13 23:51:41.760 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (14) from balance of Олег. Current balance: 1690
+2025-12-13 23:51:41.760 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(14) to balance of Биба (Goose)
+2025-12-13 23:51:41.760 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 845
+2025-12-13 23:51:41.760 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (845) from balance of Олег. Current balance: 845
+2025-12-13 23:51:41.761 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=20
+2025-12-13 23:51:41.761 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.761 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (100) from balance of Олег. Current balance: 745
+2025-12-13 23:51:41.761 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (100) from balance of Кира. Current balance: 9459
+2025-12-13 23:51:41.761 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(200) to balance of Боба (Goose)
+2025-12-13 23:51:41.762 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 200 from each player
+2025-12-13 23:51:41.762 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 372
+2025-12-13 23:51:41.762 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (372) from balance of Олег. Current balance: 373
+2025-12-13 23:51:41.762 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (44) from balance of Олег. Current balance: 329
+2025-12-13 23:51:41.763 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(53.730374267818625) to balance of Олег
+2025-12-13 23:51:41.763 | INFO     | src.simulation.casino:bet:200 - [WIN] Player Олег won 53
+2025-12-13 23:51:41.763 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=22
+2025-12-13 23:51:41.763 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.763 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (110) from balance of Олег. Current balance: 272
+2025-12-13 23:51:41.763 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (110) from balance of Кира. Current balance: 9349
+2025-12-13 23:51:41.764 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(220) to balance of Боба (Goose)
+2025-12-13 23:51:41.764 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 220 from each player
+2025-12-13 23:51:41.764 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 136
+2025-12-13 23:51:41.764 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (136) from balance of Олег. Current balance: 136
+2025-12-13 23:51:41.765 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба (hp=870), honk_volume=46
+2025-12-13 23:51:41.765 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба
+2025-12-13 23:51:41.768 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба trying to steal 20 from player Олег
+2025-12-13 23:51:41.768 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба didn't steel anything from Олег.
+2025-12-13 23:51:41.769 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (54) from balance of Олег. Current balance: 82
+2025-12-13 23:51:41.769 | INFO     | src.simulation.casino:bet:204 - [LOSE] Player Олег lost 54
+2025-12-13 23:51:41.769 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 41
+2025-12-13 23:51:41.769 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (41) from balance of Олег. Current balance: 41
+2025-12-13 23:51:41.770 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=26
+2025-12-13 23:51:41.770 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.770 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (41) from balance of Олег. Current balance: 0
+2025-12-13 23:51:41.770 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (130) from balance of Кира. Current balance: 9219
+2025-12-13 23:51:41.771 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(171) to balance of Боба (Goose)
+2025-12-13 23:51:41.771 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 171 from each player
+2025-12-13 23:51:41.771 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Буба trying to steal 7 from player Кира
+2025-12-13 23:51:41.771 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (7) from balance of Кира. Current balance: 9212
+2025-12-13 23:51:41.772 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(7) to balance of Боба-Буба-Буба-Буба (Goose)
+2025-12-13 23:51:41.772 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба-Буба-Буба stole 7 from Кира.
+2025-12-13 23:51:41.773 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=28
+2025-12-13 23:51:41.773 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.773 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (140) from balance of Кира. Current balance: 9072
+2025-12-13 23:51:41.773 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(140) to balance of Боба (Goose)
+2025-12-13 23:51:41.774 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 140 from each player
+2025-12-13 23:51:41.774 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба-Биба trying to steal 0 from player Олег
+2025-12-13 23:51:41.774 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Буба-Биба stole 0 from Олег.
+2025-12-13 23:51:41.775 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба-Боба-Буба trying to steal 0 from player Олег
+2025-12-13 23:51:41.775 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Буба-Боба-Буба stole 0 from Олег.
+2025-12-13 23:51:41.775 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Боба-Буба-Буба trying to steal 25 from player Кира
+2025-12-13 23:51:41.775 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Боба-Буба-Буба-Боба-Буба-Буба didn't steel anything from Кира.
+2025-12-13 23:51:41.776 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=31
+2025-12-13 23:51:41.776 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.776 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (155) from balance of Кира. Current balance: 8917
+2025-12-13 23:51:41.776 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(155) to balance of Боба (Goose)
+2025-12-13 23:51:41.776 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 155 from each player
+2025-12-13 23:51:41.777 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба (hp=1050), honk_volume=62
+2025-12-13 23:51:41.777 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба
+2025-12-13 23:51:41.777 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (2313) from balance of Кира. Current balance: 6604
+2025-12-13 23:51:41.777 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(231300) to balance of Кира
+2025-12-13 23:51:41.777 | INFO     | src.simulation.casino:bet:194 - [JACKPOT] Player Кира got Jackpot and won 231300
+2025-12-13 23:51:41.778 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Олег for 9 damage
+2025-12-13 23:51:41.778 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба trying to steal 0 from player Олег
+2025-12-13 23:51:41.778 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба stole 0 from Олег.
+2025-12-13 23:51:41.778 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 0
+2025-12-13 23:51:41.778 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Олег. Current balance: 0
+2025-12-13 23:51:41.779 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Кира for 15 damage
+2025-12-13 23:51:41.779 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (15) from balance of Кира. Current balance: 237889
+2025-12-13 23:51:41.779 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(15) to balance of Биба (Goose)
+2025-12-13 23:51:41.779 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (59832) from balance of Кира. Current balance: 178057
+2025-12-13 23:51:41.780 | INFO     | src.simulation.casino:bet:204 - [LOSE] Player Кира lost 59832
+2025-12-13 23:51:41.780 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.780 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.780 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=34
+2025-12-13 23:51:41.780 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.781 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (170) from balance of Кира. Current balance: 177887
+2025-12-13 23:51:41.781 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(170) to balance of Боба (Goose)
+2025-12-13 23:51:41.781 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 170 from each player
+2025-12-13 23:51:41.781 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Боба-Буба-Биба (hp=270), honk_volume=15
+2025-12-13 23:51:41.781 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба-Боба-Буба-Биба
+2025-12-13 23:51:41.781 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Макс for 14 damage
+2025-12-13 23:51:41.782 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Кира for 19 damage
+2025-12-13 23:51:41.782 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (19) from balance of Кира. Current balance: 177868
+2025-12-13 23:51:41.782 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(19) to balance of Биба (Goose)
+2025-12-13 23:51:41.782 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Олег for 8 damage
+2025-12-13 23:51:41.783 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба (hp=1510), honk_volume=88
+2025-12-13 23:51:41.783 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба
+2025-12-13 23:51:41.783 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=36
+2025-12-13 23:51:41.783 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.783 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (180) from balance of Кира. Current balance: 177688
+2025-12-13 23:51:41.783 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(180) to balance of Боба (Goose)
+2025-12-13 23:51:41.784 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 180 from each player
+2025-12-13 23:51:41.784 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 0
+2025-12-13 23:51:41.784 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Олег. Current balance: 0
+2025-12-13 23:51:41.784 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.784 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.785 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба trying to steal 0 from player Олег
+2025-12-13 23:51:41.786 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба stole 0 from Олег.
+2025-12-13 23:51:41.786 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба trying to steal 16 from player Кира
+2025-12-13 23:51:41.786 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (16) from balance of Кира. Current balance: 177672
+2025-12-13 23:51:41.786 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(16) to balance of Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба (Goose)
+2025-12-13 23:51:41.787 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба stole 16 from Кира.
+2025-12-13 23:51:41.787 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (125787) from balance of Кира. Current balance: 51885
+2025-12-13 23:51:41.787 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(266850.8748725385) to balance of Кира
+2025-12-13 23:51:41.787 | INFO     | src.simulation.casino:bet:200 - [WIN] Player Кира won 266850
+2025-12-13 23:51:41.788 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба (hp=1430), honk_volume=75
+2025-12-13 23:51:41.788 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба
+2025-12-13 23:51:41.788 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.788 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.788 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=40
+2025-12-13 23:51:41.788 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.789 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (200) from balance of Кира. Current balance: 318535
+2025-12-13 23:51:41.789 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(200) to balance of Боба (Goose)
+2025-12-13 23:51:41.789 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 200 from each player
+2025-12-13 23:51:41.789 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=41
+2025-12-13 23:51:41.789 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.789 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (205) from balance of Кира. Current balance: 318330
+2025-12-13 23:51:41.789 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(205) to balance of Боба (Goose)
+2025-12-13 23:51:41.790 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 205 from each player
+2025-12-13 23:51:41.790 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба trying to steal 0 from player Макс
+2025-12-13 23:51:41.790 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Боба didn't steel anything from Макс.
+2025-12-13 23:51:41.790 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Олег for 12 damage
+2025-12-13 23:51:41.790 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=43
+2025-12-13 23:51:41.790 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.791 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (215) from balance of Кира. Current balance: 318115
+2025-12-13 23:51:41.791 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(215) to balance of Боба (Goose)
+2025-12-13 23:51:41.791 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 215 from each player
+2025-12-13 23:51:41.791 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Боба-Буба trying to steal 0 from player Олег
+2025-12-13 23:51:41.791 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Боба-Буба-Буба-Боба-Буба didn't steel anything from Олег.
+2025-12-13 23:51:41.791 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.791 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.792 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Макс for 9 damage
+2025-12-13 23:51:41.792 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=44
+2025-12-13 23:51:41.792 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.792 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (220) from balance of Кира. Current balance: 317895
+2025-12-13 23:51:41.792 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(220) to balance of Боба (Goose)
+2025-12-13 23:51:41.792 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 220 from each player
+2025-12-13 23:51:41.793 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (175375) from balance of Кира. Current balance: 142520
+2025-12-13 23:51:41.793 | INFO     | src.simulation.casino:bet:204 - [LOSE] Player Кира lost 175375
+2025-12-13 23:51:41.793 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 0
+2025-12-13 23:51:41.793 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Олег. Current balance: 0
+2025-12-13 23:51:41.793 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (123315) from balance of Кира. Current balance: 19205
+2025-12-13 23:51:41.794 | INFO     | src.simulation.casino:bet:204 - [LOSE] Player Кира lost 123315
+2025-12-13 23:51:41.794 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба trying to steal 0 from player Макс
+2025-12-13 23:51:41.794 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба didn't steel anything from Макс.
+2025-12-13 23:51:41.794 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=48
+2025-12-13 23:51:41.794 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.794 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (240) from balance of Кира. Current balance: 18965
+2025-12-13 23:51:41.794 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(240) to balance of Боба (Goose)
+2025-12-13 23:51:41.795 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 240 from each player
+2025-12-13 23:51:41.795 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба (hp=1140), honk_volume=61
+2025-12-13 23:51:41.795 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба
+2025-12-13 23:51:41.795 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба trying to steal 0 from player Макс
+2025-12-13 23:51:41.795 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба didn't steel anything from Макс.
+2025-12-13 23:51:41.795 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Буба trying to steal 32 from player Кира
+2025-12-13 23:51:41.796 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (32) from balance of Кира. Current balance: 18933
+2025-12-13 23:51:41.796 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(32) to balance of Боба-Буба-Буба-Буба (Goose)
+2025-12-13 23:51:41.796 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба-Буба-Буба stole 32 from Кира.
+2025-12-13 23:51:41.796 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Кира lost half of his money: 9466
+2025-12-13 23:51:41.796 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (9466) from balance of Кира. Current balance: 9467
+2025-12-13 23:51:41.796 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (9443) from balance of Кира. Current balance: 24
+2025-12-13 23:51:41.797 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(20753.334565831196) to balance of Кира
+2025-12-13 23:51:41.797 | INFO     | src.simulation.casino:bet:200 - [WIN] Player Кира won 20753
+2025-12-13 23:51:41.797 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Олег for 20 damage
+2025-12-13 23:51:41.797 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (1241) from balance of Кира. Current balance: 19536
+2025-12-13 23:51:41.798 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(124100) to balance of Кира
+2025-12-13 23:51:41.798 | INFO     | src.simulation.casino:bet:194 - [JACKPOT] Player Кира got Jackpot and won 124100
+2025-12-13 23:51:41.799 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Макс for 10 damage
+2025-12-13 23:51:41.800 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба (hp=740), honk_volume=36
+2025-12-13 23:51:41.800 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба
+2025-12-13 23:51:41.800 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Олег for 13 damage
+2025-12-13 23:51:41.800 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба (hp=1970), honk_volume=114
+2025-12-13 23:51:41.800 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба
+2025-12-13 23:51:41.801 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=50
+2025-12-13 23:51:41.801 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.801 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (250) from balance of Кира. Current balance: 143386
+2025-12-13 23:51:41.801 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(250) to balance of Боба (Goose)
+2025-12-13 23:51:41.801 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 250 from each player
+2025-12-13 23:51:41.801 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Боба-Буба-Буба trying to steal 0 from player Макс
+2025-12-13 23:51:41.801 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба-Буба-Боба-Буба-Буба stole 0 from Макс.
+2025-12-13 23:51:41.802 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба (hp=1180), honk_volume=72
+2025-12-13 23:51:41.802 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба
+2025-12-13 23:51:41.802 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Биба trying to steal 29 from player Кира
+2025-12-13 23:51:41.802 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (29) from balance of Кира. Current balance: 143357
+2025-12-13 23:51:41.802 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(29) to balance of Биба (Goose)
+2025-12-13 23:51:41.802 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Биба stole 29 from Кира.
+2025-12-13 23:51:41.802 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 0
+2025-12-13 23:51:41.802 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Олег. Current balance: 0
+2025-12-13 23:51:41.803 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба trying to steal 0 from player Олег
+2025-12-13 23:51:41.803 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба didn't steel anything from Олег.
+2025-12-13 23:51:41.803 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Буба trying to steal 31 from player Кира
+2025-12-13 23:51:41.803 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (31) from balance of Кира. Current balance: 143326
+2025-12-13 23:51:41.803 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(31) to balance of Боба-Буба-Буба-Буба (Goose)
+2025-12-13 23:51:41.803 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба-Буба-Буба stole 31 from Кира.
+2025-12-13 23:51:41.804 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.804 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.804 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=51
+2025-12-13 23:51:41.804 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.804 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (255) from balance of Кира. Current balance: 143071
+2025-12-13 23:51:41.804 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(255) to balance of Боба (Goose)
+2025-12-13 23:51:41.804 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 255 from each player
+2025-12-13 23:51:41.804 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 0
+2025-12-13 23:51:41.805 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Олег. Current balance: 0
+2025-12-13 23:51:41.805 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба (hp=1100), honk_volume=59
+2025-12-13 23:51:41.805 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба
+2025-12-13 23:51:41.805 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба trying to steal 0 from player Макс
+2025-12-13 23:51:41.805 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Боба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба didn't steel anything from Макс.
+2025-12-13 23:51:41.805 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба trying to steal 34 from player Кира
+2025-12-13 23:51:41.806 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (34) from balance of Кира. Current balance: 143037
+2025-12-13 23:51:41.806 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(34) to balance of Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба (Goose)
+2025-12-13 23:51:41.806 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба stole 34 from Кира.
+2025-12-13 23:51:41.806 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Олег for 14 damage
+2025-12-13 23:51:41.806 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Олег for 9 damage
+2025-12-13 23:51:41.806 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба trying to steal 0 from player Олег
+2025-12-13 23:51:41.807 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба stole 0 from Олег.
+2025-12-13 23:51:41.807 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба (hp=1500), honk_volume=84
+2025-12-13 23:51:41.807 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба
+2025-12-13 23:51:41.807 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба trying to steal 0 from player Олег
+2025-12-13 23:51:41.807 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба stole 0 from Олег.
+2025-12-13 23:51:41.808 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.808 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.808 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Буба trying to steal 16 from player Кира
+2025-12-13 23:51:41.808 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Боба-Буба-Буба-Буба didn't steel anything from Кира.
+2025-12-13 23:51:41.808 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 0
+2025-12-13 23:51:41.808 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Олег. Current balance: 0
+2025-12-13 23:51:41.809 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Буба (hp=1280), honk_volume=75
+2025-12-13 23:51:41.809 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Буба
+2025-12-13 23:51:41.809 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Боба-Буба-Биба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба (hp=1450), honk_volume=87
+2025-12-13 23:51:41.809 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба-Боба-Буба-Биба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба
+2025-12-13 23:51:41.809 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=54
+2025-12-13 23:51:41.809 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.809 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (270) from balance of Кира. Current balance: 142767
+2025-12-13 23:51:41.809 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(270) to balance of Боба (Goose)
+2025-12-13 23:51:41.810 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 270 from each player
+2025-12-13 23:51:41.811 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Биба (hp=1090), honk_volume=64
+2025-12-13 23:51:41.811 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Биба
+2025-12-13 23:51:41.812 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (91140) from balance of Кира. Current balance: 51627
+2025-12-13 23:51:41.812 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(180856.02686090057) to balance of Кира
+2025-12-13 23:51:41.812 | INFO     | src.simulation.casino:bet:200 - [WIN] Player Кира won 180856
+2025-12-13 23:51:41.813 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Буба trying to steal 13 from player Кира
+2025-12-13 23:51:41.813 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Боба-Буба-Буба-Буба didn't steel anything from Кира.
+2025-12-13 23:51:41.813 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Макс for 15 damage
+2025-12-13 23:51:41.813 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.813 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.814 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Макс for 16 damage
+2025-12-13 23:51:41.814 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Биба trying to steal 0 from player Макс
+2025-12-13 23:51:41.814 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Биба stole 0 from Макс.
+2025-12-13 23:51:41.814 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба trying to steal 0 from player Макс
+2025-12-13 23:51:41.815 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба stole 0 from Макс.
+2025-12-13 23:51:41.815 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.815 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.815 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба trying to steal 0 from player Олег
+2025-12-13 23:51:41.815 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба stole 0 from Олег.
+2025-12-13 23:51:41.816 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба (hp=1700), honk_volume=90
+2025-12-13 23:51:41.816 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба
+2025-12-13 23:51:41.816 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=57
+2025-12-13 23:51:41.816 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.816 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (285) from balance of Кира. Current balance: 232198
+2025-12-13 23:51:41.816 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(285) to balance of Боба (Goose)
+2025-12-13 23:51:41.816 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 285 from each player
+2025-12-13 23:51:41.817 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.817 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.817 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Кира lost half of his money: 116099
+2025-12-13 23:51:41.817 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (116099) from balance of Кира. Current balance: 116099
+2025-12-13 23:51:41.817 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба trying to steal 0 from player Олег
+2025-12-13 23:51:41.817 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Буба-Боба-Буба-Буба-Боба-Буба-Боба-Буба-Буба-Боба-Буба-Буба stole 0 from Олег.
+2025-12-13 23:51:41.818 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Кира for 16 damage
+2025-12-13 23:51:41.818 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (16) from balance of Кира. Current balance: 116083
+2025-12-13 23:51:41.818 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(16) to balance of Биба (Goose)
+2025-12-13 23:51:41.818 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Макс for 8 damage
+2025-12-13 23:51:41.818 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Кира for 11 damage
+2025-12-13 23:51:41.818 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (11) from balance of Кира. Current balance: 116072
+2025-12-13 23:51:41.818 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(11) to balance of Биба (Goose)
+2025-12-13 23:51:41.819 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба-Буба-Боба (hp=360), honk_volume=73
+2025-12-13 23:51:41.819 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба-Буба-Боба
+2025-12-13 23:51:41.819 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.819 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.819 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=60
+2025-12-13 23:51:41.819 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.820 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (300) from balance of Кира. Current balance: 115772
+2025-12-13 23:51:41.820 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(300) to balance of Боба (Goose)
+2025-12-13 23:51:41.820 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 300 from each player
+2025-12-13 23:51:41.820 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=63
+2025-12-13 23:51:41.820 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.820 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (315) from balance of Кира. Current balance: 115457
+2025-12-13 23:51:41.821 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(315) to balance of Боба (Goose)
+2025-12-13 23:51:41.821 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 315 from each player
+2025-12-13 23:51:41.821 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба trying to steal 0 from player Олег
+2025-12-13 23:51:41.821 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба didn't steel anything from Олег.
+2025-12-13 23:51:41.821 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=65
+2025-12-13 23:51:41.821 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.822 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (325) from balance of Кира. Current balance: 115132
+2025-12-13 23:51:41.822 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(325) to balance of Боба (Goose)
+2025-12-13 23:51:41.822 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 325 from each player
+2025-12-13 23:51:41.822 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.822 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.822 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 0
+2025-12-13 23:51:41.822 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Олег. Current balance: 0
+2025-12-13 23:51:41.823 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=67
+2025-12-13 23:51:41.823 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.823 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (335) from balance of Кира. Current balance: 114797
+2025-12-13 23:51:41.823 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(335) to balance of Боба (Goose)
+2025-12-13 23:51:41.823 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 335 from each player
+2025-12-13 23:51:41.823 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба-Буба-Боба-Буба trying to steal 28 from player Кира
+2025-12-13 23:51:41.824 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Боба-Буба-Буба-Боба-Буба didn't steel anything from Кира.
+2025-12-13 23:51:41.824 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=69
+2025-12-13 23:51:41.824 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.824 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (345) from balance of Кира. Current balance: 114452
+2025-12-13 23:51:41.824 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(345) to balance of Боба (Goose)
+2025-12-13 23:51:41.825 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 345 from each player
+2025-12-13 23:51:41.825 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Кира for 18 damage
+2025-12-13 23:51:41.825 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (18) from balance of Кира. Current balance: 114434
+2025-12-13 23:51:41.825 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(18) to balance of Биба (Goose)
+2025-12-13 23:51:41.825 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба-Боба-Буба trying to steal 26 from player Кира
+2025-12-13 23:51:41.826 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Буба-Боба-Буба didn't steel anything from Кира.
+2025-12-13 23:51:41.826 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Кира lost half of his money: 57217
+2025-12-13 23:51:41.826 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (57217) from balance of Кира. Current balance: 57217
+2025-12-13 23:51:41.826 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба (hp=2240), honk_volume=120
+2025-12-13 23:51:41.826 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба
+2025-12-13 23:51:41.826 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.827 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.827 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.827 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.827 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Кира lost half of his money: 28608
+2025-12-13 23:51:41.827 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (28608) from balance of Кира. Current balance: 28609
+2025-12-13 23:51:41.827 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Кира lost half of his money: 14304
+2025-12-13 23:51:41.827 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (14304) from balance of Кира. Current balance: 14305
+2025-12-13 23:51:41.828 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=72
+2025-12-13 23:51:41.828 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.828 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (360) from balance of Кира. Current balance: 13945
+2025-12-13 23:51:41.828 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(360) to balance of Боба (Goose)
+2025-12-13 23:51:41.828 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 360 from each player
+2025-12-13 23:51:41.828 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=76
+2025-12-13 23:51:41.828 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.828 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (380) from balance of Кира. Current balance: 13565
+2025-12-13 23:51:41.829 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(380) to balance of Боба (Goose)
+2025-12-13 23:51:41.829 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 380 from each player
+2025-12-13 23:51:41.829 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Макс for 15 damage
+2025-12-13 23:51:41.829 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба trying to steal 0 from player Олег
+2025-12-13 23:51:41.829 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Буба stole 0 from Олег.
+2025-12-13 23:51:41.830 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Боба-Буба trying to steal 0 from player Олег
+2025-12-13 23:51:41.830 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Боба-Буба didn't steel anything from Олег.
+2025-12-13 23:51:41.830 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Олег for 19 damage
+2025-12-13 23:51:41.830 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Макс lost half of his money: 0
+2025-12-13 23:51:41.830 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Макс. Current balance: 0
+2025-12-13 23:51:41.830 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (5259) from balance of Кира. Current balance: 8306
+2025-12-13 23:51:41.831 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(8361.342536697506) to balance of Кира
+2025-12-13 23:51:41.831 | INFO     | src.simulation.casino:bet:200 - [WIN] Player Кира won 8361
+2025-12-13 23:51:41.831 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=78
+2025-12-13 23:51:41.831 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.831 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (390) from balance of Кира. Current balance: 16277
+2025-12-13 23:51:41.831 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(390) to balance of Боба (Goose)
+2025-12-13 23:51:41.831 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 390 from each player
+2025-12-13 23:51:41.832 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=80
+2025-12-13 23:51:41.832 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.832 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (400) from balance of Кира. Current balance: 15877
+2025-12-13 23:51:41.832 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(400) to balance of Боба (Goose)
+2025-12-13 23:51:41.832 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 400 from each player
+2025-12-13 23:51:41.832 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба-Биба trying to steal 0 from player Олег
+2025-12-13 23:51:41.832 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Буба-Биба didn't steel anything from Олег.
+2025-12-13 23:51:41.832 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=84
+2025-12-13 23:51:41.832 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.833 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (420) from balance of Кира. Current balance: 15457
+2025-12-13 23:51:41.833 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(420) to balance of Боба (Goose)
+2025-12-13 23:51:41.833 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 420 from each player
+2025-12-13 23:51:41.833 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=85
+2025-12-13 23:51:41.833 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.833 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (425) from balance of Кира. Current balance: 15032
+2025-12-13 23:51:41.833 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(425) to balance of Боба (Goose)
+2025-12-13 23:51:41.833 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 425 from each player
+2025-12-13 23:51:41.834 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=87
+2025-12-13 23:51:41.834 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.834 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (435) from balance of Кира. Current balance: 14597
+2025-12-13 23:51:41.834 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(435) to balance of Боба (Goose)
+2025-12-13 23:51:41.834 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 435 from each player
+2025-12-13 23:51:41.834 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Олег lost half of his money: 0
+2025-12-13 23:51:41.834 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (0) from balance of Олег. Current balance: 0
+2025-12-13 23:51:41.835 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Кира lost half of his money: 7298
+2025-12-13 23:51:41.835 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (7298) from balance of Кира. Current balance: 7299
+2025-12-13 23:51:41.835 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=89
+2025-12-13 23:51:41.835 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.835 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (445) from balance of Кира. Current balance: 6854
+2025-12-13 23:51:41.835 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(445) to balance of Боба (Goose)
+2025-12-13 23:51:41.835 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 445 from each player
+2025-12-13 23:51:41.836 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Макс for 15 damage
+2025-12-13 23:51:41.836 | INFO     | src.entities.goose:honk:20 - [Goose] Боба honks, honk_volume=92
+2025-12-13 23:51:41.836 | INFO     | src.entities.goose:__call__:66 - [HonkGoose] Боба called
+2025-12-13 23:51:41.836 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (460) from balance of Кира. Current balance: 6394
+2025-12-13 23:51:41.836 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(460) to balance of Боба (Goose)
+2025-12-13 23:51:41.836 | INFO     | src.simulation.casino:_event_honkgoose_honk:293 - [MEGA-HONK] HonkGoose honked and stole 460 from each player
+2025-12-13 23:51:41.837 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба (hp=2840), honk_volume=151
+2025-12-13 23:51:41.837 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба
+2025-12-13 23:51:41.837 | INFO     | src.simulation.casino:_event_player_panic:334 - [PANIC] Кира lost half of his money: 3197
+2025-12-13 23:51:41.837 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (3197) from balance of Кира. Current balance: 3197
+2025-12-13 23:51:41.838 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Боба-Буба (hp=3070), honk_volume=164
+2025-12-13 23:51:41.838 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Боба-Буба
+2025-12-13 23:51:41.838 | INFO     | src.entities.goose:attack:53 - [WarGoose] Биба attacks Макс for 20 damage
+2025-12-13 23:51:41.839 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Боба-Буба trying to steal 25 from player Кира
+2025-12-13 23:51:41.839 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (25) from balance of Кира. Current balance: 3172
+2025-12-13 23:51:41.839 | INFO     | src.simulation.casino:add_chip_to_balance:58 - Added Chip(25) to balance of Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Боба-Буба (Goose)
+2025-12-13 23:51:41.840 | INFO     | src.simulation.casino:steal_from_player:165 - SUCCESS - Goose Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Боба-Буба stole 25 from Кира.
+2025-12-13 23:51:41.840 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Буба-Буба-Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Боба-Буба (hp=3300), honk_volume=177
+2025-12-13 23:51:41.840 | INFO     | src.simulation.casino:register_goose:136 - Registered goose, name=Боба-Буба-Буба-Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Боба-Буба
+2025-12-13 23:51:41.840 | INFO     | src.simulation.casino:steal_from_player:153 - Goose Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба trying to steal 0 from player Олег
+2025-12-13 23:51:41.840 | INFO     | src.simulation.casino:steal_from_player:168 - FAILURE - Goose Буба-Боба-Буба-Биба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Биба-Буба-Биба-Боба-Буба-Буба-Боба-Буба-Буба-Буба-Биба-Боба-Буба-Буба-Боба-Буба didn't steel anything from Олег.
+2025-12-13 23:51:41.845 | INFO     | src.simulation.casino:show_state:350 - Showed state.
+2025-12-13 23:51:41.845 | INFO     | src.simulation.run_simulation:run_simulation:48 - Simulation completed after 200 steps

@@ -1,12 +1,12 @@
 from collections import UserList
-from src.entities.player import Player
+from src.entities.goose import Goose
 
-class PlayerCollection(UserList):
+class GooseCollection(UserList):
     """
-    List-like collection for Player objects
+    List-like collection for Goose objects
     """
 
-    def __init__(self, initlist: list[Player] =None):
+    def __init__(self, initlist: list[Goose] =None):
         if initlist is None:
             initlist = []
         super().__init__(initlist)
@@ -19,7 +19,7 @@ class PlayerCollection(UserList):
 
     def __getitem__(self, index):
         if isinstance(index, slice):
-            return PlayerCollection(self.data[index])
+            return GooseCollection(self.data[index])
         return self.data[index]
 
     def append(self, item):
@@ -34,4 +34,4 @@ class PlayerCollection(UserList):
         return item in self.data
 
     def __repr__(self):
-        return f"PlayerCollection({self.data})"
+        return f"GooseCollection({self.data})"
