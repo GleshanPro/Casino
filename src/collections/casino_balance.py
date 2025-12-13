@@ -10,7 +10,6 @@ class CasinoBalance(dict):
     ...
 """
 
-@log_calls
 class CasinoBalance(UserDict): 
     
     @log_calls
@@ -24,14 +23,15 @@ class CasinoBalance(UserDict):
     def __getitem__(self, key):
         return super().__getitem__(key)
     
-    @log_calls 
+    @log_calls
     def __iter__(self):
         return iter(self.data)
     
+    @log_calls
     def __len__(self):
         return len(self.data)
     
-    
+    @log_calls
     def add_money(self, key: str, amount: int):
         """
         :param key: Name of player whose balance will be updated
@@ -41,6 +41,7 @@ class CasinoBalance(UserDict):
         """
         self.data[key] += amount
         
+    @log_calls
     def remove_money(self, key: str, amount: int):
         """
         :param key: Name of player whose balance will be updated

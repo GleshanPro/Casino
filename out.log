@@ -1,0 +1,55 @@
+2025-12-13 15:00:34.667 | INFO     | __main__:run_simulation:21 - Started simulation with parameters: steps=1, seed=1
+2025-12-13 15:00:34.667 | INFO     | src.log_calls:wrapper:7 - [CALL] __setitem__(({}, 'Jack', 128), {})
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __setitem__(({'Jack': 128}, 'Mia', 239), {})
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __iter__(({'Jack': 128, 'Mia': 239},), {})
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __iter__ -> <dict_keyiterator object at 0x7b6b03572ca0>
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __getitem__(({'Jack': 128, 'Mia': 239}, 'Jack'), {})
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 128
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __getitem__(({'Jack': 128, 'Mia': 239}, 'Mia'), {})
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 239
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __setitem__(({'Jack': 128, 'Mia': 239}, 'Jack', 128), {})
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __getitem__(({'Jack': 128, 'Mia': 239}, 'Jack'), {})
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 128
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __setitem__(({'Jack': 128, 'Mia': 239}, 'Jack', 103), {})
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __getitem__(({'Jack': 103, 'Mia': 239}, 'Mia'), {})
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 239
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __setitem__(({'Jack': 103, 'Mia': 239}, 'Mia', 199), {})
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:7 - [CALL] __iter__(({'Jack': 103, 'Mia': 199},), {})
+2025-12-13 15:00:34.668 | INFO     | src.log_calls:wrapper:9 - [RET] __iter__ -> <dict_keyiterator object at 0x7b6b03572ca0>
+2025-12-13 15:00:34.669 | INFO     | src.log_calls:wrapper:7 - [CALL] __getitem__(({'Jack': 103, 'Mia': 199}, 'Jack'), {})
+2025-12-13 15:00:34.669 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 103
+2025-12-13 15:00:34.669 | INFO     | src.log_calls:wrapper:7 - [CALL] __getitem__(({'Jack': 103, 'Mia': 199}, 'Mia'), {})
+2025-12-13 15:00:34.669 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 199
+2025-12-13 15:01:03.104 | INFO     | __main__:run_simulation:21 - Started simulation with parameters: steps=1, seed=1
+2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __setitem__(({}, 'Jack', 128), {})
+2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
+2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __setitem__(({'Jack': 128}, 'Mia', 239), {})
+2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
+2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __iter__(({'Jack': 128, 'Mia': 239},), {})
+2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:9 - [RET] __iter__ -> <dict_keyiterator object at 0x7cdc02c72c50>
+2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __getitem__(({'Jack': 128, 'Mia': 239}, 'Jack'), {})
+2025-12-13 15:01:03.104 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 128
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __getitem__(({'Jack': 128, 'Mia': 239}, 'Mia'), {})
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 239
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __setitem__(({'Jack': 128, 'Mia': 239}, 'Jack', 128), {})
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __getitem__(({'Jack': 128, 'Mia': 239}, 'Jack'), {})
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 128
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __setitem__(({'Jack': 128, 'Mia': 239}, 'Jack', 103), {})
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __getitem__(({'Jack': 103, 'Mia': 239}, 'Mia'), {})
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 239
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __setitem__(({'Jack': 103, 'Mia': 239}, 'Mia', 199), {})
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __setitem__ -> None
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __iter__(({'Jack': 103, 'Mia': 199},), {})
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:9 - [RET] __iter__ -> <dict_keyiterator object at 0x7cdc02c72c50>
+2025-12-13 15:01:03.105 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __getitem__(({'Jack': 103, 'Mia': 199}, 'Jack'), {})
+2025-12-13 15:01:03.106 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 103
+2025-12-13 15:01:03.106 | INFO     | src.log_calls:wrapper:7 - [CALL] <class 'function'> __getitem__(({'Jack': 103, 'Mia': 199}, 'Mia'), {})
+2025-12-13 15:01:03.106 | INFO     | src.log_calls:wrapper:9 - [RET] __getitem__ -> 199
+2025-12-13 15:02:51.051 | INFO     | __main__:run_simulation:21 - Started simulation with parameters: steps=1, seed=1
