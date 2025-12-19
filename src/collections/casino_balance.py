@@ -8,7 +8,6 @@ class CasinoBalance(UserDict):
     Supports iteration and element manipulation
     """
 
-
     def __setitem__(self, key: str, value: ChipCollection):
         super().__setitem__(key, value)
 

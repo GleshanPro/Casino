@@ -16,12 +16,12 @@ class Goose:
 
     def honk(self) -> None:
         # target - one player, not many
-        print(f"{self.name} гогочет " + "УРОВЕНЬ ГОГОТА: ", self.honk_volume)
-        logger.info(f"[Goose] {self.name} honks, honk_volume={self.honk_volume}")
+        print(f"[ГОГОТ] {self.name} гогочет с громкостью: ", self.honk_volume)
+        logger.info(f"[HONK] {self.name} honks, honk_volume={self.honk_volume}")
 
 
-    def attack(self, target: Player, damage: int) -> int:
-        print(f"Гусь {self.name} атакует игрока {target.name} и наносит {damage} урона")
+    def rob(self, target: Player, damage: int) -> int:
+        print(f"[АТАКА] Гусь {self.name} атакует игрока {target.name} и получает с него {damage} рублей")
         logger.info(f"[Goose] {self.name} attacks {target.name} for {damage} damage")
         return damage
 
@@ -46,21 +46,37 @@ class Goose:
         return f"Goose(name={self.name!r}, hp={self.hp}, honk_volume={self.honk_volume})"
 
 
-class WarGoose(Goose):
-    def attack(self, target: Player, damage: int | None = None) -> int:
+class WetBanditGoose(Goose):
+    def rob(self, target: Player, damage: int | None = None) -> int:
         damage = damage or random.randint(8, 20)
-        print(f"[WarGoose] {self.name} свирепо атакует игрока {target.name} и наносит {damage} урона!")
-        logger.info(f"[WarGoose] {self.name} attacks {target.name} for {damage} damage")
+        print(f"[ОГРАБЛЕНИЕ] {self.name} забрался в дом игрока {target.name} и обокрал его на {damage} рублей!")
+        logger.info(f"[HEIST] {self.name} attacks {target.name} for {damage} damage")
         return damage
 
+class KevinGoose(Goose):
+    def trap(self, target: Player, damage: int | None = None) -> None:
+        damage = damage or random.randint(1, 100)
+        print(f"[ЛОВУШКА] Игрок {target.name} попался в ловушку гусю {self.name} и потерял {damage} рублей!")
+        logger.info(f"[TRAP] {target.name} fell into {self.name}'s trap and lost {damage} money!")
+        return damage
+    
+    # def prank(self, target: Player, damage: int | None = None) -> None:
+    #     damage = damage or random.randint(1, 50)
+    #     print(f"[РОЗЫГРЫШ] Гусь {self.name} развёл игрока {target.name} попался в ловушку гусю  и потерял {damage} рублей!")
+    #     logger.info(f"[PRANK] {target.name} was pranked by goose {self.name} and lost {damage} money")
+    #     return damage
 
-
-
-class HonkGoose(Goose):
+class DriverGoose(Goose):
     def __call__(self, times: int | None = None) -> None:
+        logger.info(f"[DriverGoose] {self.name} called")
+        
         times = times or random.randint(1, 4)
+        coef = 1 + random.random() * random.randint(1, 2)
+        
         self.honk_volume += times
-        print(f"{self.name} готовит мега-гогот x{times}!")
-        self.honk()
-
-        logger.info(f"[HonkGoose] {self.name} called")
+        return int(self.honk() * coef)
+        
+    def honk(self) -> None:
+        print(f"[ГУДОК] {self.name} сигналит на своём фургоне с громкостью: ", self.honk_volume)
+        logger.info(f"[HORN] {self.name} honks, honk_volume={self.honk_volume}")
+        return self.honk_volume

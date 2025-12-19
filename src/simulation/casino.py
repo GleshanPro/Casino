@@ -2,7 +2,7 @@ from loguru import logger
 import random
 
 from src.entities.player import Player
-from src.entities.goose import Goose, WarGoose, HonkGoose
+from src.entities.goose import Goose, WetBanditGoose, DriverGoose, KevinGoose
 from src.entities.chip import Chip
 
 from src.collections.chip_collection import ChipCollection
@@ -104,7 +104,7 @@ class Casino:
 
         new_balance = self.get_balance_total(balance)
         logger.info(f"Removed Chips for amount ({amount}) from balance of {name}{goose_text}. Current balance: {new_balance}")
-        print(f"\t\tТекущий баланс {name} = {new_balance}")
+        # print(f"\t\tТекущий баланс {name} = {new_balance}")
 
         return True
 
@@ -114,13 +114,15 @@ class Casino:
         """
         events = [
             self._event_player_bet,
-            self._event_wargoose_attack,
-            self._event_honkgoose_honk,
+            self._event_wetbanditgoose_rob,
+            self._event_drivergoose_horn,
             self._event_goose_steal,
             self._event_goose_flock,
             self._event_player_panic,
+            self._event_kevingoose_trap
         ]
         event = random.choice(events)
+        
         event()
 
     def register_player(self, player: Player) -> None:
@@ -161,11 +163,20 @@ class Casino:
                 goose_balance = ChipCollection()
                 self.goose_ledger[goose.name] = goose_balance
                 self.add_chip_to_balance(goose, amount)
-            print(f"Игрок {player_name} загляделся на новогоднюю ёлку с ярко горящими гирляндами и шарами, а гусь {goose.name} - не пальцем деланный, воспользовался этим и успешно своровал у него {amount} рублей.")
+            print(f"[СВОРОВАЛ] Игрок {player_name} загляделся на новогоднюю ёлку с ярко горящими гирляндами и шарами, а гусь {goose.name} - не пальцем деланный, воспользовался этим и успешно своровал у него {amount} рублей.")
             logger.info(f"SUCCESS - Goose {goose.name} stole {amount} from {player_name}.")
         else:
-            print(f"Игрок {player_name} выпил шампанского для смелости и, не побоявшись даже зубов гуся {goose.name}, гордо отбился от него, не проронив ни копейки.")
+            print(f"[ОТБИЛСЯ] Игрок {player_name} выпил шампанского для смелости и, не побоявшись даже зубов гуся {goose.name}, гордо отбился от него, не проронив ни копейки.")
             logger.info(f"FAILURE - Goose {goose.name} didn't steel anything from {player_name}.")
+
+    def print_balance_update_entity(self, entity: Player | Goose):
+        balance = self.get_balance_total(entity.balance)
+        print(f"[ОБНОВЛЕНИЕ БАЛАНСА] Баланс {entity.name} -> {balance}")
+        logger.info(f"[BALANCE UPD] {type(entity)} {entity.name} -> {balance}")
+        
+    def print_balance_update(self, name: str, balance: int):
+        print(f"[ОБНОВЛЕНИЕ БАЛАНСА] Баланс {name} -> {balance}")
+        logger.info(f"[BALANCE UPD] {name} -> {balance}")
 
     @staticmethod
     def event_with_probability(probability: float) -> bool:
@@ -196,12 +207,13 @@ class Casino:
             coef = 1.2 + random.random()
             win_amount = int(amount * coef)
             self.add_chip_to_balance(player_name, win_amount)
-            print(f"У игрока {player_name} сбылось новогоднее желание, он приумножил свою ставку {amount} рублей в {coef} раза и получил {win_amount} рублей!")
+            print(f"[ВЫИГРЫШ] У игрока {player_name} сбылось новогоднее желание, он приумножил свою ставку {amount} рублей в {coef} раза и получил {win_amount} рублей!")
             logger.info(f"[WIN] Player {player_name} won {win_amount}")
         else:
-            print(f"Игрок {player_name} ГЛУПО проиграл свои {amount} рублей, стыд и позор! Ты плохо вёл себя в этом году, не жди подарка от Деда Мороза.")
+            print(f"[ПРОИГРЫШ] Игрок {player_name} ГЛУПО проиграл свои {amount} рублей, стыд и позор! Ты плохо вёл себя в этом году, не жди подарка от Деда Мороза.")
             self.balance += amount
             logger.info(f"[LOSE] Player {player_name} lost {amount}")
+        self.print_balance_update(player_name, self.get_balance_total(player_balance))
 
     def _event_player_bet(self) -> None:
         """
@@ -221,27 +233,23 @@ class Casino:
         if bet_amount == 0:
             return
 
-        print(f"[ВНИМАНИЕ] {player_name} делает ставку в размере {bet_amount}")
+        print(f"[СТАВКА] {player_name} делает ставку в размере {bet_amount}")
         self.bet(player_name, bet_amount)
 
-    def _event_wargoose_attack(self) -> None:
+    def _event_kevingoose_trap(self) -> None:
         """
-        WarGoose attacks a random player.
+        KevinGoose attacks a random player.
         """
-        if not self.players or not self.gooses:
+        
+        kevingooses = [g for g in self.gooses if isinstance(g, KevinGoose)]
+        if not kevingooses:
             return
 
-        # Find WarGoose instances
-        wargooses = [g for g in self.gooses if isinstance(g, WarGoose)]
-        if not wargooses:
-            return
-
-        goose = random.choice(wargooses)
+        goose: KevinGoose = random.choice(kevingooses)
         player = random.choice(self.players)
         player_name = player.name
 
-        print("[ВНИМАНИЕ] WarGoose атакует!")
-        damage = goose.attack(player)
+        damage = goose.trap(player)
         player_balance = self.balances[player_name]
         player_total = self.get_balance_total(player_balance)
 
@@ -255,24 +263,51 @@ class Casino:
                 self.remove_chip_from_balance(player_name, player_total)
                 self.add_chip_to_balance(goose, player_total)
 
-    def _event_honkgoose_honk(self) -> None:
+    def _event_wetbanditgoose_rob(self) -> None:
         """
-        HonkGoose uses its special honk ability.
+        WetBanditGoose attacks a random player.
+        """
+        if not self.players or not self.gooses:
+            return
+
+        # Find WetBanditGoose instances
+        wetbanditgooses = [g for g in self.gooses if isinstance(g, WetBanditGoose)]
+        if not wetbanditgooses:
+            return
+
+        goose = random.choice(wetbanditgooses)
+        player = random.choice(self.players)
+        player_name = player.name
+
+        damage = goose.rob(player)
+        player_balance = self.balances[player_name]
+        player_total = self.get_balance_total(player_balance)
+
+        if player_total >= damage:
+            self.remove_chip_from_balance(player_name, damage)
+            # Goose gains money from attack
+            self.add_chip_to_balance(goose, damage)
+        else:
+            # Take all remaining money
+            if player_total > 0:
+                self.remove_chip_from_balance(player_name, player_total)
+                self.add_chip_to_balance(goose, player_total)
+
+    def _event_drivergoose_horn(self) -> None:
+        """
+        DriverGoose uses its special honk ability.
         """
         if not self.gooses:
             return
 
-        # Find HonkGoose instances
-        honkgooses = [g for g in self.gooses if isinstance(g, HonkGoose)]
-        if not honkgooses:
+        # Find DriverGoose instances
+        drivergooses = [g for g in self.gooses if isinstance(g, DriverGoose)]
+        if not drivergooses:
             return
 
-        goose = random.choice(honkgooses)
-        goose()
-
-        # Google: "Python how to affect multiple players with single action"
-        # Reduce all player balances based on honk_volume
-        honk_damage = goose.honk_volume * 5
+        goose = random.choice(drivergooses)
+        
+        honk_damage = goose()
         total_stolen = 0
 
         for player_name in list(self.balances.keys()):
@@ -289,8 +324,9 @@ class Casino:
         # Goose gains all stolen money
         if total_stolen > 0:
             self.add_chip_to_balance(goose, total_stolen)
-            print(f"[ВНИМАНИЕ] {goose.name} своим гоготом ошарашил игроков так, что каждый обронил {total_stolen} рублей!")
-            logger.info(f"[MEGA-HONK] HonkGoose honked and stole {total_stolen} from each player")
+            print(f"[ПОТЕРЯ] От гудка {goose.name} все игроки подпрыгнули и обронили в общем счёте {total_stolen} рублей!")
+            logger.info(f"[LOSE] DriverGoose honked and stole {total_stolen} from each player")
+            self.print_balance_update_entity(goose)
 
     def _event_goose_steal(self) -> None:
         """
@@ -315,7 +351,7 @@ class Casino:
         goose1 = selected[0]
         goose2 = selected[1]
 
-        print("[ВНИМАНИЕ] Гуси формируют стаю!")
+        print("[СТАЯ] Гуси формируют стаю!")
         flock = goose1 + goose2
         self.register_goose(flock)
 
@@ -330,7 +366,7 @@ class Casino:
         player_balance = self.balances[player.name]
         lost_amount = self.get_balance_total(player_balance) // 2
 
-        print(f"[ВНИМАНИЕ] {player.name} поверил, что прохожий с бородой - Дед Мороз и отгрохал ему ПОЛОВИНУ своего СОСТОЯНИЯ! ({lost_amount} рублей потеряно)")
+        print(f"[ПАНИКА] {player.name} поверил, что прохожий с бородой - Дед Мороз и отгрохал ему ПОЛОВИНУ своего СОСТОЯНИЯ! ({lost_amount} рублей потеряно)")
         logger.info(f"[PANIC] {player.name} lost half of his money: {lost_amount}")
         # Clear all chips
         self.remove_chip_from_balance(player, lost_amount)

@@ -2,7 +2,7 @@ from src.collections.player_collection import PlayerCollection
 from src.collections.goose_collection import GooseCollection
 from src.collections.chip_collection import ChipCollection
 from src.entities.player import Player
-from src.entities.goose import Goose, WarGoose, HonkGoose
+from src.entities.goose import Goose, KevinGoose, WetBanditGoose, DriverGoose
 from src.entities.chip import Chip
 
 def input_players() -> PlayerCollection:
@@ -63,9 +63,9 @@ def input_gooses() -> GooseCollection:
                     balance.append(Chip(initial_balance))
 
             if goose_type == 'war':
-                goose = WarGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                goose = WetBanditGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
             elif goose_type == 'honk':
-                goose = HonkGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                goose = DriverGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
             else:
                 goose = Goose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
 
@@ -178,13 +178,16 @@ def set_gooses(want_modifying: bool) -> GooseCollection:
     gus_balance = ChipCollection([Chip(10)])
     boba_balance = ChipCollection([Chip(15)])
     buba_balance = ChipCollection([Chip(0)])
-    biba = WarGoose(name="Биба", hp=40, honk_volume=2, balance=gus_balance)
-    boba = HonkGoose(name="Боба", hp=30, honk_volume=3, balance=boba_balance)
+    kevin_balance = ChipCollection([Chip(100)])
+    biba = WetBanditGoose(name="Биба", hp=40, honk_volume=2, balance=gus_balance)
+    boba = DriverGoose(name="Боба", hp=30, honk_volume=3, balance=boba_balance)
     buba = Goose(name="Буба", hp=100, honk_volume=3, balance=buba_balance)
+    kevin = KevinGoose(name="Кевин", hp=200, honk_volume=10, balance=kevin_balance)
     gooses.append(biba)
     gooses.append(boba)
     gooses.append(buba)
-    print("✓ Созданы гуси по умолчанию: Биба (WarGoose), Боба (HonkGoose), Буба")
+    gooses.append(kevin)
+    print("✓ Созданы гуси по умолчанию: Биба (WetBanditGoose), Боба (DriverGoose), Кевин (KevinGoose), Буба")
     print(f"Текущее состояние: {len(gooses)} гусей")
 
     while want_modifying:
@@ -230,9 +233,9 @@ def set_gooses(want_modifying: bool) -> GooseCollection:
                 balance = ChipCollection()
 
                 if goose_type == 'war':
-                    new_goose = WarGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                    new_goose = WetBanditGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
                 elif goose_type == 'honk':
-                    new_goose = HonkGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                    new_goose = DriverGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
                 else:
                     new_goose = Goose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
 

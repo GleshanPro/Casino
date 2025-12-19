@@ -122,7 +122,7 @@ class TestCasino:
         casino.register_goose(wargoose)
         initial_player_balance = casino.balances["Alice"].total_value()
         initial_goose_balance = casino.goose_ledger["WarGus"].total_value()
-        casino._event_wargoose_attack()
+        casino._event_wetbanditgoose_rob()
         # Player should lose money, goose should gain
         final_player_balance = casino.balances["Alice"].total_value()
         final_goose_balance = casino.goose_ledger["WarGus"].total_value()

@@ -29,8 +29,10 @@ def run_simulation(steps: int = 20, seed: int | None = None, want_modyfing: bool
     print("\n=== ИЗНАЧАЛЬНОЕ СОСТОЯНИЕ ===")
     casino.show_state()
 
-    for _ in range(1, steps + 1):
+    for i in range(1, steps + 1):
+        print(f"---{i}-Я ЛОЖКА ОЛИВЬЕ, АМ-НЯМ-НЯМ...---\n")
         casino.run_step()
+        print()
 
     # Set balances
     for player in players:
