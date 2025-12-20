@@ -32,7 +32,7 @@ class ChipCollection(UserList):
             raise ValueError(f"{item} not in collection")
         self.data.remove(item)
 
-    def __contains__(self, item):
+    def __contains__(self, item: Chip):
         return item in self.data
 
     def __repr__(self):

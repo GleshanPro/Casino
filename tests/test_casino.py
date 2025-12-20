@@ -1,7 +1,7 @@
 import random
 from src.simulation.casino import Casino
 from src.entities.player import Player
-from src.entities.goose import Goose, WarGoose
+from src.entities.goose import Goose, WetBanditGoose
 from src.entities.chip import Chip
 from src.collections.chip_collection import ChipCollection
 from src.collections.player_collection import PlayerCollection
@@ -35,7 +35,7 @@ class TestCasino:
         """Test Casino initialization with geese"""
         gooses = GooseCollection([
             Goose("Gus", 50, 2, ChipCollection([Chip(10)])),
-            WarGoose("WarGus", 60, 3, ChipCollection([Chip(15)]))
+            WetBanditGoose("WarGus", 60, 3, ChipCollection([Chip(15)]))
         ])
         casino = Casino(gooses=gooses)
         assert len(casino.gooses) == 2
@@ -112,14 +112,14 @@ class TestCasino:
         assert casino.balances["Alice"].total_value() == 70
 
 
-    def test_event_wargoose_attack(self):
-        """Test WarGoose attack event"""
+    def test_event_WetBanditGoose_attack(self):
+        """Test WetBanditGoose attack event"""
         random.seed(42)
         casino = Casino()
         player = Player("Alice", ChipCollection([Chip(100)]))
-        wargoose = WarGoose("WarGus", 60, 3, ChipCollection([Chip(10)]))
+        WetBanditGoose = WetBanditGoose("WarGus", 60, 3, ChipCollection([Chip(10)]))
         casino.register_player(player)
-        casino.register_goose(wargoose)
+        casino.register_goose(WetBanditGoose)
         initial_player_balance = casino.balances["Alice"].total_value()
         initial_goose_balance = casino.goose_ledger["WarGus"].total_value()
         casino._event_wetbanditgoose_rob()

@@ -11,7 +11,7 @@ class CasinoBalance(UserDict):
     def __setitem__(self, key: str, value: ChipCollection):
         super().__setitem__(key, value)
 
-    def __getitem__(self, key):
+    def __getitem__(self, key: str):
         return super().__getitem__(key)
 
     def __iter__(self):
@@ -29,7 +29,7 @@ class CasinoBalance(UserDict):
         """
         self.data[key].append(chip)
 
-    def remove_money(self, key: str, chip: int):
+    def remove_money(self, key: str, chip: Chip):
         """
         :param key: Name of player whose balance will be updated
         :type key: str

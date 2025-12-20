@@ -1,6 +1,6 @@
 import pytest
 from src.collections.goose_collection import GooseCollection
-from src.entities.goose import Goose, WarGoose, HonkGoose
+from src.entities.goose import Goose, WetBanditGoose, DriverGoose
 from src.collections.chip_collection import ChipCollection
 from src.entities.chip import Chip
 
@@ -16,7 +16,7 @@ class TestGooseCollection:
     def test_collection_with_geese(self):
         """Test GooseCollection with initial geese"""
         goose1 = Goose("Gus", 50, 2, ChipCollection([Chip(10)]))
-        goose2 = WarGoose("WarGus", 60, 3, ChipCollection([Chip(15)]))
+        goose2 = WetBanditGoose("WarGus", 60, 3, ChipCollection([Chip(15)]))
         collection = GooseCollection([goose1, goose2])
         assert len(collection) == 2
 
@@ -31,7 +31,7 @@ class TestGooseCollection:
     def test_remove_goose(self):
         """Test removing goose from collection"""
         goose1 = Goose("Gus", 50, 2, ChipCollection([Chip(10)]))
-        goose2 = WarGoose("WarGus", 60, 3, ChipCollection([Chip(15)]))
+        goose2 = WetBanditGoose("WarGus", 60, 3, ChipCollection([Chip(15)]))
         collection = GooseCollection([goose1, goose2])
         collection.remove(goose1)
         assert len(collection) == 1
@@ -48,7 +48,7 @@ class TestGooseCollection:
     def test_getitem_index(self):
         """Test indexing collection"""
         goose1 = Goose("Gus", 50, 2, ChipCollection([Chip(10)]))
-        goose2 = WarGoose("WarGus", 60, 3, ChipCollection([Chip(15)]))
+        goose2 = WetBanditGoose("WarGus", 60, 3, ChipCollection([Chip(15)]))
         collection = GooseCollection([goose1, goose2])
         assert collection[0] == goose1
         assert collection[1] == goose2
@@ -57,8 +57,8 @@ class TestGooseCollection:
         """Test slicing collection returns GooseCollection"""
         geese = [
             Goose("Gus", 50, 2, ChipCollection([Chip(10)])),
-            WarGoose("WarGus", 60, 3, ChipCollection([Chip(15)])),
-            HonkGoose("HonkGus", 40, 4, ChipCollection([Chip(20)]))
+            WetBanditGoose("WarGus", 60, 3, ChipCollection([Chip(15)])),
+            DriverGoose("HonkGus", 40, 4, ChipCollection([Chip(20)]))
         ]
         collection = GooseCollection(geese)
         sliced = collection[1:3]
@@ -70,7 +70,7 @@ class TestGooseCollection:
     def test_iteration(self):
         """Test iterating over collection"""
         goose1 = Goose("Gus", 50, 2, ChipCollection([Chip(10)]))
-        goose2 = WarGoose("WarGus", 60, 3, ChipCollection([Chip(15)]))
+        goose2 = WetBanditGoose("WarGus", 60, 3, ChipCollection([Chip(15)]))
         collection = GooseCollection([goose1, goose2])
         collected = [g for g in collection]
         assert collected == [goose1, goose2]
@@ -78,7 +78,7 @@ class TestGooseCollection:
     def test_contains(self):
         """Test __contains__ method"""
         goose1 = Goose("Gus", 50, 2, ChipCollection([Chip(10)]))
-        goose2 = WarGoose("WarGus", 60, 3, ChipCollection([Chip(15)]))
+        goose2 = WetBanditGoose("WarGus", 60, 3, ChipCollection([Chip(15)]))
         collection = GooseCollection([goose1, goose2])
         assert goose1 in collection
         assert goose2 in collection

@@ -1,5 +1,5 @@
 import pytest
-from src.entities.goose import Goose, WarGoose, HonkGoose
+from src.entities.goose import Goose, WetBanditGoose, DriverGoose
 from src.entities.player import Player
 from src.collections.chip_collection import ChipCollection
 from src.entities.chip import Chip
@@ -62,54 +62,54 @@ class TestGoose:
         assert "50" in repr_str
 
 
-class TestWarGoose:
-    """Tests for WarGoose class"""
+class TestWetBanditGoose:
+    """Tests for WetBanditGoose class"""
 
-    def test_wargoose_creation(self):
-        """Test WarGoose creation"""
+    def test_WetBanditGoose_creation(self):
+        """Test WetBanditGoose creation"""
         balance = ChipCollection([Chip(10)])
-        wargoose = WarGoose("WarGus", 60, 3, balance)
-        assert wargoose.name == "WarGus"
-        assert wargoose.hp == 60
-        assert isinstance(wargoose, Goose)
+        WetBanditGoose = WetBanditGoose("WarGus", 60, 3, balance)
+        assert WetBanditGoose.name == "WarGus"
+        assert WetBanditGoose.hp == 60
+        assert isinstance(WetBanditGoose, Goose)
 
-    def test_wargoose_attack_with_damage(self):
-        """Test WarGoose attack with specified damage"""
-        wargoose = WarGoose("WarGus", 60, 3)
+    def test_WetBanditGoose_attack_with_damage(self):
+        """Test WetBanditGoose attack with specified damage"""
+        WetBanditGoose = WetBanditGoose("WarGus", 60, 3)
         player = Player("Alice", ChipCollection([Chip(100)]))
-        damage = wargoose.attack(player, 18)
+        damage = WetBanditGoose.attack(player, 18)
         assert damage == 18
 
-    def test_wargoose_attack_random_damage(self):
-        """Test WarGoose attack with random damage (8-20)"""
-        wargoose = WarGoose("WarGus", 60, 3)
+    def test_WetBanditGoose_attack_random_damage(self):
+        """Test WetBanditGoose attack with random damage (8-20)"""
+        WetBanditGoose = WetBanditGoose("WarGus", 60, 3)
         player = Player("Alice", ChipCollection([Chip(100)]))
-        damage = wargoose.attack(player)
+        damage = WetBanditGoose.attack(player)
         assert 8 <= damage <= 20
 
 
-class TestHonkGoose:
-    """Tests for HonkGoose class"""
+class TestDriverGoose:
+    """Tests for DriverGoose class"""
 
-    def test_honkgoose_creation(self):
-        """Test HonkGoose creation"""
+    def test_DriverGoose_creation(self):
+        """Test DriverGoose creation"""
         balance = ChipCollection([Chip(15)])
-        honkgoose = HonkGoose("HonkGus", 40, 4, balance)
-        assert honkgoose.name == "HonkGus"
-        assert honkgoose.hp == 40
-        assert isinstance(honkgoose, Goose)
+        DriverGoose = DriverGoose("HonkGus", 40, 4, balance)
+        assert DriverGoose.name == "HonkGus"
+        assert DriverGoose.hp == 40
+        assert isinstance(DriverGoose, Goose)
 
-    def test_honkgoose_call_with_times(self):
-        """Test HonkGoose __call__ with specified times"""
-        honkgoose = HonkGoose("HonkGus", 40, 4)
-        initial_volume = honkgoose.honk_volume
-        honkgoose(3)
-        assert honkgoose.honk_volume == initial_volume + 3
+    def test_DriverGoose_call_with_times(self):
+        """Test DriverGoose __call__ with specified times"""
+        DriverGoose = DriverGoose("HonkGus", 40, 4)
+        initial_volume = DriverGoose.honk_volume
+        DriverGoose(3)
+        assert DriverGoose.honk_volume == initial_volume + 3
 
-    def test_honkgoose_call_random_times(self):
-        """Test HonkGoose __call__ with random times (1-4)"""
-        honkgoose = HonkGoose("HonkGus", 40, 4)
-        initial_volume = honkgoose.honk_volume
-        honkgoose()
-        assert honkgoose.honk_volume >= initial_volume + 1
-        assert honkgoose.honk_volume <= initial_volume + 4
+    def test_DriverGoose_call_random_times(self):
+        """Test DriverGoose __call__ with random times (1-4)"""
+        DriverGoose = DriverGoose("HonkGus", 40, 4)
+        initial_volume = DriverGoose.honk_volume
+        DriverGoose()
+        assert DriverGoose.honk_volume >= initial_volume + 1
+        assert DriverGoose.honk_volume <= initial_volume + 4

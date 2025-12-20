@@ -22,15 +22,15 @@ class GooseCollection(UserList):
             return GooseCollection(self.data[index])
         return self.data[index]
 
-    def append(self, item):
+    def append(self, item: Goose):
         self.data.append(item)
 
-    def remove(self, item):
+    def remove(self, item: Goose):
         if item not in self.data:
             raise ValueError(f"{item} not in collection")
         self.data.remove(item)
 
-    def __contains__(self, item):
+    def __contains__(self, item: Goose):
         return item in self.data
 
     def __repr__(self):
