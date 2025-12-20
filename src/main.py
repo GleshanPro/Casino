@@ -19,7 +19,7 @@ def start():
 
     steps = ""
     while not steps.isdigit():
-        steps = input("Сколько тазиков оливье Вы готовы сегодня съесть?: ")
+        steps = input("Сколько ложек оливье Вы готовы сегодня съесть?: ")
     steps = int(steps)
 
     seed = ""

@@ -1046,3 +1046,451 @@
 2025-12-19 22:21:00.099 | INFO     | src.simulation.casino:remove_chip_from_balance:106 - Removed Chips for amount (90) from balance of Олег. Current balance: 90
 2025-12-19 22:21:00.100 | INFO     | src.simulation.casino:show_state:386 - Showed state.
 2025-12-19 22:21:00.100 | INFO     | src.simulation.run_simulation:run_simulation:48 - Simulation completed after 20 steps
+2025-12-20 09:16:35.293 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 123
+2025-12-20 09:16:35.294 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=10, seed=123
+2025-12-20 09:16:35.294 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 09:16:35.294 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 09:16:35.294 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 09:16:35.294 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 09:16:35.294 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 09:16:35.294 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 09:16:35.294 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 09:16:35.294 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 09:16:35.294 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:16:35.295 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (99) from balance of Макс. Current balance: 901
+2025-12-20 09:16:35.295 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(9900) to balance of Макс
+2025-12-20 09:16:35.295 | INFO     | src.simulation.casino:bet:209 - [JACKPOT] Player Макс got Jackpot and won 9900
+2025-12-20 09:16:35.295 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Макс -> 10801
+2025-12-20 09:16:35.295 | INFO     | src.entities.goose:trap:60 - [TRAP] Макс fell into Кевин's trap and lost 69 money!
+2025-12-20 09:16:35.295 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (69) from balance of Макс. Current balance: 10732
+2025-12-20 09:16:35.295 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(69) to balance of Кевин (Goose)
+2025-12-20 09:16:35.295 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Боба (hp=130), honk_volume=6
+2025-12-20 09:16:35.295 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба-Боба
+2025-12-20 09:16:35.295 | INFO     | src.entities.goose:trap:60 - [TRAP] Олег fell into Кевин's trap and lost 18 money!
+2025-12-20 09:16:35.295 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (18) from balance of Олег. Current balance: 482
+2025-12-20 09:16:35.295 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(18) to balance of Кевин (Goose)
+2025-12-20 09:16:35.295 | INFO     | src.entities.goose:__call__:71 - [DriverGoose] Боба called
+2025-12-20 09:16:35.295 | INFO     | src.entities.goose:honk:81 - [HORN] Боба honks, honk_volume=5
+2025-12-20 09:16:35.295 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (6) from balance of Олег. Current balance: 476
+2025-12-20 09:16:35.295 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (6) from balance of Макс. Current balance: 10726
+2025-12-20 09:16:35.295 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (6) from balance of Кира. Current balance: 9994
+2025-12-20 09:16:35.295 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(18) to balance of Боба (Goose)
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:_event_drivergoose_horn:332 - [LOSE] DriverGoose honked and stole 18 from each player
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 33
+2025-12-20 09:16:35.296 | INFO     | src.entities.goose:trap:60 - [TRAP] Кира fell into Кевин's trap and lost 49 money!
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (49) from balance of Кира. Current balance: 9945
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(49) to balance of Кевин (Goose)
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (171) from balance of Олег. Current balance: 305
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(17100) to balance of Олег
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:bet:209 - [JACKPOT] Player Олег got Jackpot and won 17100
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Олег -> 17405
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (4668) from balance of Олег. Current balance: 12737
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(6963) to balance of Олег
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:bet:215 - [WIN] Player Олег won 6963
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Олег -> 19700
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Буба-Боба trying to steal 21 from player Макс
+2025-12-20 09:16:35.296 | INFO     | src.simulation.casino:steal_from_player:174 - FAILURE - Goose Буба-Боба didn't steel anything from Макс.
+2025-12-20 09:16:35.297 | INFO     | src.entities.goose:trap:60 - [TRAP] Макс fell into Кевин's trap and lost 44 money!
+2025-12-20 09:16:35.297 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (44) from balance of Макс. Current balance: 10682
+2025-12-20 09:16:35.297 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(44) to balance of Кевин (Goose)
+2025-12-20 09:16:35.297 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:16:35.297 | INFO     | src.simulation.run_simulation:run_simulation:48 - Simulation completed after 10 steps
+2025-12-20 09:17:01.875 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 123
+2025-12-20 09:17:01.875 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=20, seed=123
+2025-12-20 09:17:01.876 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 09:17:01.876 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 09:17:01.876 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 09:17:01.876 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 09:17:01.876 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 09:17:01.876 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 09:17:01.876 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 09:17:01.876 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 09:17:01.877 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:17:01.877 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (99) from balance of Макс. Current balance: 901
+2025-12-20 09:17:01.877 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(9900) to balance of Макс
+2025-12-20 09:17:01.877 | INFO     | src.simulation.casino:bet:209 - [JACKPOT] Player Макс got Jackpot and won 9900
+2025-12-20 09:17:01.877 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Макс -> 10801
+2025-12-20 09:17:01.877 | INFO     | src.entities.goose:trap:60 - [TRAP] Макс fell into Кевин's trap and lost 69 money!
+2025-12-20 09:17:01.877 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (69) from balance of Макс. Current balance: 10732
+2025-12-20 09:17:01.877 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(69) to balance of Кевин (Goose)
+2025-12-20 09:17:01.877 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Боба (hp=130), honk_volume=6
+2025-12-20 09:17:01.877 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба-Боба
+2025-12-20 09:17:01.877 | INFO     | src.entities.goose:trap:60 - [TRAP] Олег fell into Кевин's trap and lost 18 money!
+2025-12-20 09:17:01.877 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (18) from balance of Олег. Current balance: 482
+2025-12-20 09:17:01.877 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(18) to balance of Кевин (Goose)
+2025-12-20 09:17:01.878 | INFO     | src.entities.goose:__call__:71 - [DriverGoose] Боба called
+2025-12-20 09:17:01.878 | INFO     | src.entities.goose:honk:81 - [HORN] Боба honks, honk_volume=5
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (6) from balance of Олег. Current balance: 476
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (6) from balance of Макс. Current balance: 10726
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (6) from balance of Кира. Current balance: 9994
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(18) to balance of Боба (Goose)
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:_event_drivergoose_horn:332 - [LOSE] DriverGoose honked and stole 18 from each player
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 33
+2025-12-20 09:17:01.878 | INFO     | src.entities.goose:trap:60 - [TRAP] Кира fell into Кевин's trap and lost 49 money!
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (49) from balance of Кира. Current balance: 9945
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(49) to balance of Кевин (Goose)
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (171) from balance of Олег. Current balance: 305
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(17100) to balance of Олег
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:bet:209 - [JACKPOT] Player Олег got Jackpot and won 17100
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Олег -> 17405
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (4668) from balance of Олег. Current balance: 12737
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(6963) to balance of Олег
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:bet:215 - [WIN] Player Олег won 6963
+2025-12-20 09:17:01.878 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Олег -> 19700
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Буба-Боба trying to steal 21 from player Макс
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:steal_from_player:174 - FAILURE - Goose Буба-Боба didn't steel anything from Макс.
+2025-12-20 09:17:01.879 | INFO     | src.entities.goose:trap:60 - [TRAP] Макс fell into Кевин's trap and lost 44 money!
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (44) from balance of Макс. Current balance: 10682
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(44) to balance of Кевин (Goose)
+2025-12-20 09:17:01.879 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Кевин-Боба (hp=230), honk_volume=15
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин-Боба
+2025-12-20 09:17:01.879 | INFO     | src.entities.goose:trap:60 - [TRAP] Олег fell into Кевин's trap and lost 51 money!
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (51) from balance of Олег. Current balance: 19649
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(51) to balance of Кевин (Goose)
+2025-12-20 09:17:01.879 | INFO     | src.entities.goose:trap:60 - [TRAP] Кира fell into Кевин's trap and lost 69 money!
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (69) from balance of Кира. Current balance: 9876
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(69) to balance of Кевин (Goose)
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Кира lost half of his money: 4938
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (4938) from balance of Кира. Current balance: 4938
+2025-12-20 09:17:01.879 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Кевин-Буба-Боба (hp=330), honk_volume=16
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин-Буба-Боба
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Макс lost half of his money: 5341
+2025-12-20 09:17:01.879 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (5341) from balance of Макс. Current balance: 5341
+2025-12-20 09:17:01.879 | INFO     | src.entities.goose:__call__:71 - [DriverGoose] Боба called
+2025-12-20 09:17:01.880 | INFO     | src.entities.goose:honk:81 - [HORN] Боба honks, honk_volume=7
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (12) from balance of Олег. Current balance: 19637
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (12) from balance of Макс. Current balance: 5329
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (12) from balance of Кира. Current balance: 4926
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(36) to balance of Боба (Goose)
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:_event_drivergoose_horn:332 - [LOSE] DriverGoose honked and stole 36 from each player
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 69
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Кевин-Боба trying to steal 15 from player Макс
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:steal_from_player:174 - FAILURE - Goose Кевин-Боба didn't steel anything from Макс.
+2025-12-20 09:17:01.880 | INFO     | src.entities.goose:__call__:71 - [DriverGoose] Боба called
+2025-12-20 09:17:01.880 | INFO     | src.entities.goose:honk:81 - [HORN] Боба honks, honk_volume=8
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (19) from balance of Олег. Current balance: 19618
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (19) from balance of Макс. Current balance: 5310
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (19) from balance of Кира. Current balance: 4907
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(57) to balance of Боба (Goose)
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:_event_drivergoose_horn:332 - [LOSE] DriverGoose honked and stole 57 from each player
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 126
+2025-12-20 09:17:01.880 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Кевин-Буба-Боба-Буба (hp=430), honk_volume=19
+2025-12-20 09:17:01.880 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин-Буба-Боба-Буба
+2025-12-20 09:17:01.881 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:17:01.881 | INFO     | src.simulation.run_simulation:run_simulation:48 - Simulation completed after 20 steps
+2025-12-20 09:30:58.090 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 123
+2025-12-20 09:30:58.090 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=20, seed=123
+2025-12-20 09:30:58.091 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 09:30:58.091 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 09:30:58.091 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 09:30:58.091 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 09:30:58.091 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 09:30:58.091 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 09:30:58.091 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 09:30:58.091 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 09:30:58.091 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:30:58.091 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (99) from balance of Макс. Current balance: 901
+2025-12-20 09:30:58.091 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(9900) to balance of Макс
+2025-12-20 09:30:58.092 | INFO     | src.simulation.casino:bet:209 - [JACKPOT] Player Макс got Jackpot and won 9900
+2025-12-20 09:30:58.092 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Макс -> 10801
+2025-12-20 09:30:58.092 | INFO     | src.entities.goose:trap:60 - [TRAP] Макс fell into Кевин's trap and lost 69 money!
+2025-12-20 09:30:58.092 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (69) from balance of Макс. Current balance: 10732
+2025-12-20 09:30:58.092 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(69) to balance of Кевин (Goose)
+2025-12-20 09:30:58.092 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Боба (hp=130), honk_volume=6
+2025-12-20 09:30:58.092 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба-Боба
+2025-12-20 09:30:58.092 | INFO     | src.entities.goose:trap:60 - [TRAP] Олег fell into Кевин's trap and lost 18 money!
+2025-12-20 09:30:58.092 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (18) from balance of Олег. Current balance: 482
+2025-12-20 09:30:58.092 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(18) to balance of Кевин (Goose)
+2025-12-20 09:30:58.092 | INFO     | src.entities.goose:__call__:71 - [DriverGoose] Боба called
+2025-12-20 09:30:58.092 | INFO     | src.entities.goose:honk:81 - [HORN] Боба honks, honk_volume=5
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (6) from balance of Олег. Current balance: 476
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (6) from balance of Макс. Current balance: 10726
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (6) from balance of Кира. Current balance: 9994
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(18) to balance of Боба (Goose)
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:_event_drivergoose_horn:332 - [LOSE] DriverGoose honked and stole 18 from each player
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 33
+2025-12-20 09:30:58.093 | INFO     | src.entities.goose:trap:60 - [TRAP] Кира fell into Кевин's trap and lost 49 money!
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (49) from balance of Кира. Current balance: 9945
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(49) to balance of Кевин (Goose)
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (171) from balance of Олег. Current balance: 305
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(17100) to balance of Олег
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:bet:209 - [JACKPOT] Player Олег got Jackpot and won 17100
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Олег -> 17405
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (4668) from balance of Олег. Current balance: 12737
+2025-12-20 09:30:58.093 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(6963) to balance of Олег
+2025-12-20 09:30:58.094 | INFO     | src.simulation.casino:bet:215 - [WIN] Player Олег won 6963
+2025-12-20 09:30:58.094 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Олег -> 19700
+2025-12-20 09:30:58.094 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Буба-Боба trying to steal 21 from player Макс
+2025-12-20 09:30:58.094 | INFO     | src.simulation.casino:steal_from_player:174 - FAILURE - Goose Буба-Боба didn't steel anything from Макс.
+2025-12-20 09:30:58.094 | INFO     | src.entities.goose:trap:60 - [TRAP] Макс fell into Кевин's trap and lost 44 money!
+2025-12-20 09:30:58.094 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (44) from balance of Макс. Current balance: 10682
+2025-12-20 09:30:58.094 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(44) to balance of Кевин (Goose)
+2025-12-20 09:30:58.094 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Кевин-Боба (hp=230), honk_volume=15
+2025-12-20 09:30:58.094 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин-Боба
+2025-12-20 09:30:58.094 | INFO     | src.entities.goose:trap:60 - [TRAP] Олег fell into Кевин's trap and lost 51 money!
+2025-12-20 09:30:58.094 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (51) from balance of Олег. Current balance: 19649
+2025-12-20 09:30:58.094 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(51) to balance of Кевин (Goose)
+2025-12-20 09:30:58.094 | INFO     | src.entities.goose:trap:60 - [TRAP] Кира fell into Кевин's trap and lost 69 money!
+2025-12-20 09:30:58.095 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (69) from balance of Кира. Current balance: 9876
+2025-12-20 09:30:58.095 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(69) to balance of Кевин (Goose)
+2025-12-20 09:30:58.095 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Кира lost half of his money: 4938
+2025-12-20 09:30:58.095 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (4938) from balance of Кира. Current balance: 4938
+2025-12-20 09:30:58.095 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Кевин-Буба-Боба (hp=330), honk_volume=16
+2025-12-20 09:30:58.095 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин-Буба-Боба
+2025-12-20 09:30:58.095 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Макс lost half of his money: 5341
+2025-12-20 09:30:58.095 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (5341) from balance of Макс. Current balance: 5341
+2025-12-20 09:30:58.095 | INFO     | src.entities.goose:__call__:71 - [DriverGoose] Боба called
+2025-12-20 09:30:58.095 | INFO     | src.entities.goose:honk:81 - [HORN] Боба honks, honk_volume=7
+2025-12-20 09:30:58.095 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (12) from balance of Олег. Current balance: 19637
+2025-12-20 09:30:58.095 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (12) from balance of Макс. Current balance: 5329
+2025-12-20 09:30:58.095 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (12) from balance of Кира. Current balance: 4926
+2025-12-20 09:30:58.095 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(36) to balance of Боба (Goose)
+2025-12-20 09:30:58.095 | INFO     | src.simulation.casino:_event_drivergoose_horn:332 - [LOSE] DriverGoose honked and stole 36 from each player
+2025-12-20 09:30:58.096 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 69
+2025-12-20 09:30:58.096 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Кевин-Боба trying to steal 15 from player Макс
+2025-12-20 09:30:58.096 | INFO     | src.simulation.casino:steal_from_player:174 - FAILURE - Goose Кевин-Боба didn't steel anything from Макс.
+2025-12-20 09:30:58.096 | INFO     | src.entities.goose:__call__:71 - [DriverGoose] Боба called
+2025-12-20 09:30:58.096 | INFO     | src.entities.goose:honk:81 - [HORN] Боба honks, honk_volume=8
+2025-12-20 09:30:58.096 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (19) from balance of Олег. Current balance: 19618
+2025-12-20 09:30:58.096 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (19) from balance of Макс. Current balance: 5310
+2025-12-20 09:30:58.096 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (19) from balance of Кира. Current balance: 4907
+2025-12-20 09:30:58.096 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(57) to balance of Боба (Goose)
+2025-12-20 09:30:58.096 | INFO     | src.simulation.casino:_event_drivergoose_horn:332 - [LOSE] DriverGoose honked and stole 57 from each player
+2025-12-20 09:30:58.096 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 126
+2025-12-20 09:30:58.097 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Кевин-Буба-Боба-Буба (hp=430), honk_volume=19
+2025-12-20 09:30:58.097 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин-Буба-Боба-Буба
+2025-12-20 09:30:58.097 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:30:58.097 | INFO     | src.simulation.run_simulation:run_simulation:48 - Simulation completed after 20 steps
+2025-12-20 09:31:26.838 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 111
+2025-12-20 09:31:26.839 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=20, seed=111
+2025-12-20 09:31:26.839 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 09:31:26.839 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 09:31:26.839 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 09:31:26.839 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 09:31:26.839 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 09:31:26.839 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 09:31:26.840 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 09:31:26.840 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 09:31:26.840 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:31:26.840 | INFO     | src.entities.goose:trap:60 - [TRAP] Макс fell into Кевин's trap and lost 64 money!
+2025-12-20 09:31:26.840 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (64) from balance of Макс. Current balance: 936
+2025-12-20 09:31:26.840 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(64) to balance of Кевин (Goose)
+2025-12-20 09:31:26.840 | INFO     | src.entities.goose:rob:53 - [HEIST] Биба attacks Макс for 17 damage
+2025-12-20 09:31:26.841 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (17) from balance of Макс. Current balance: 919
+2025-12-20 09:31:26.841 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(17) to balance of Биба (Goose)
+2025-12-20 09:31:26.841 | INFO     | src.entities.goose:trap:60 - [TRAP] Кира fell into Кевин's trap and lost 25 money!
+2025-12-20 09:31:26.841 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (25) from balance of Кира. Current balance: 9975
+2025-12-20 09:31:26.841 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(25) to balance of Кевин (Goose)
+2025-12-20 09:31:26.841 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Макс lost half of his money: 459
+2025-12-20 09:31:26.841 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (459) from balance of Макс. Current balance: 460
+2025-12-20 09:31:26.841 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Биба (hp=70), honk_volume=5
+2025-12-20 09:31:26.841 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба-Биба
+2025-12-20 09:31:26.841 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Макс lost half of his money: 230
+2025-12-20 09:31:26.841 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (230) from balance of Макс. Current balance: 230
+2025-12-20 09:31:26.842 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Кевин trying to steal 22 from player Кира
+2025-12-20 09:31:26.842 | INFO     | src.simulation.casino:steal_from_player:174 - FAILURE - Goose Кевин didn't steel anything from Кира.
+2025-12-20 09:31:26.842 | INFO     | src.entities.goose:rob:53 - [HEIST] Биба attacks Макс for 20 damage
+2025-12-20 09:31:26.842 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (20) from balance of Макс. Current balance: 210
+2025-12-20 09:31:26.842 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(20) to balance of Биба (Goose)
+2025-12-20 09:31:26.842 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (183) from balance of Макс. Current balance: 27
+2025-12-20 09:31:26.842 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(18300) to balance of Макс
+2025-12-20 09:31:26.842 | INFO     | src.simulation.casino:bet:209 - [JACKPOT] Player Макс got Jackpot and won 18300
+2025-12-20 09:31:26.842 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Макс -> 18327
+2025-12-20 09:31:26.842 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Кевин-Боба-Биба (hp=270), honk_volume=15
+2025-12-20 09:31:26.842 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин-Боба-Биба
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (16661) from balance of Макс. Current balance: 1666
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(1666100) to balance of Макс
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:bet:209 - [JACKPOT] Player Макс got Jackpot and won 1666100
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Макс -> 1667766
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Боба trying to steal 20 from player Макс
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (20) from balance of Макс. Current balance: 1667746
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(20) to balance of Боба (Goose)
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:steal_from_player:171 - SUCCESS - Goose Боба stole 20 from Макс.
+2025-12-20 09:31:26.843 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Биба-Кевин-Боба-Биба (hp=310), honk_volume=17
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба-Кевин-Боба-Биба
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Кевин-Боба-Биба trying to steal 24 from player Кира
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (24) from balance of Кира. Current balance: 9951
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(24) to balance of Кевин-Боба-Биба (Goose)
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:steal_from_player:171 - SUCCESS - Goose Кевин-Боба-Биба stole 24 from Кира.
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Кевин trying to steal 39 from player Макс
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:steal_from_player:174 - FAILURE - Goose Кевин didn't steel anything from Макс.
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Кира lost half of his money: 4975
+2025-12-20 09:31:26.843 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (4975) from balance of Кира. Current balance: 4976
+2025-12-20 09:31:26.844 | INFO     | src.entities.goose:trap:60 - [TRAP] Олег fell into Кевин's trap and lost 22 money!
+2025-12-20 09:31:26.844 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (22) from balance of Олег. Current balance: 478
+2025-12-20 09:31:26.844 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(22) to balance of Кевин (Goose)
+2025-12-20 09:31:26.844 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Кевин-Боба-Биба trying to steal 39 from player Макс
+2025-12-20 09:31:26.844 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (39) from balance of Макс. Current balance: 1667707
+2025-12-20 09:31:26.844 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(39) to balance of Кевин-Боба-Биба (Goose)
+2025-12-20 09:31:26.844 | INFO     | src.simulation.casino:steal_from_player:171 - SUCCESS - Goose Кевин-Боба-Биба stole 39 from Макс.
+2025-12-20 09:31:26.844 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (1452484) from balance of Макс. Current balance: 215223
+2025-12-20 09:31:26.844 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(3054795) to balance of Макс
+2025-12-20 09:31:26.844 | INFO     | src.simulation.casino:bet:215 - [WIN] Player Макс won 3054795
+2025-12-20 09:31:26.844 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Макс -> 3270018
+2025-12-20 09:31:26.844 | INFO     | src.entities.goose:rob:53 - [HEIST] Биба attacks Кира for 18 damage
+2025-12-20 09:31:26.844 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (18) from balance of Кира. Current balance: 4958
+2025-12-20 09:31:26.844 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(18) to balance of Биба (Goose)
+2025-12-20 09:31:26.845 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:31:26.845 | INFO     | src.simulation.run_simulation:run_simulation:48 - Simulation completed after 20 steps
+2025-12-20 09:31:57.228 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 123123
+2025-12-20 09:31:57.229 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=20, seed=123123
+2025-12-20 09:31:57.229 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 09:31:57.229 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 09:31:57.229 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 09:31:57.229 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 09:31:57.229 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 09:31:57.229 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 09:31:57.229 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 09:31:57.229 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (60) from balance of Макс. Current balance: 940
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:bet:219 - [LOSE] Player Макс lost 60
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Макс -> 940
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Кира lost half of his money: 5000
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (5000) from balance of Кира. Current balance: 5000
+2025-12-20 09:31:57.230 | INFO     | src.entities.goose:trap:60 - [TRAP] Кира fell into Кевин's trap and lost 62 money!
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (62) from balance of Кира. Current balance: 4938
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(62) to balance of Кевин (Goose)
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (360) from balance of Олег. Current balance: 140
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(552) to balance of Олег
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:bet:215 - [WIN] Player Олег won 552
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Олег -> 692
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Макс lost half of his money: 470
+2025-12-20 09:31:57.230 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (470) from balance of Макс. Current balance: 470
+2025-12-20 09:31:57.231 | INFO     | src.entities.goose:trap:60 - [TRAP] Кира fell into Кевин's trap and lost 54 money!
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (54) from balance of Кира. Current balance: 4884
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(54) to balance of Кевин (Goose)
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Макс lost half of his money: 235
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (235) from balance of Макс. Current balance: 235
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (175) from balance of Олег. Current balance: 517
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(227) to balance of Олег
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:bet:215 - [WIN] Player Олег won 227
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Олег -> 744
+2025-12-20 09:31:57.231 | INFO     | src.entities.goose:rob:53 - [HEIST] Биба attacks Макс for 19 damage
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (19) from balance of Макс. Current balance: 216
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(19) to balance of Биба (Goose)
+2025-12-20 09:31:57.231 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Кевин-Биба (hp=240), honk_volume=12
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин-Биба
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (180) from balance of Олег. Current balance: 564
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(18000) to balance of Олег
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:bet:209 - [JACKPOT] Player Олег got Jackpot and won 18000
+2025-12-20 09:31:57.231 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Олег -> 18564
+2025-12-20 09:31:57.232 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Кевин-Биба-Биба (hp=280), honk_volume=14
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин-Биба-Биба
+2025-12-20 09:31:57.232 | INFO     | src.entities.goose:__call__:71 - [DriverGoose] Боба called
+2025-12-20 09:31:57.232 | INFO     | src.entities.goose:honk:81 - [HORN] Боба honks, honk_volume=6
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (8) from balance of Олег. Current balance: 18556
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (8) from balance of Макс. Current balance: 208
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (8) from balance of Кира. Current balance: 4876
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(24) to balance of Боба (Goose)
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:_event_drivergoose_horn:332 - [LOSE] DriverGoose honked and stole 24 from each player
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 39
+2025-12-20 09:31:57.232 | INFO     | src.entities.goose:trap:60 - [TRAP] Макс fell into Кевин's trap and lost 30 money!
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (30) from balance of Макс. Current balance: 178
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(30) to balance of Кевин (Goose)
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Макс lost half of his money: 89
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (89) from balance of Макс. Current balance: 89
+2025-12-20 09:31:57.232 | INFO     | src.entities.goose:__call__:71 - [DriverGoose] Боба called
+2025-12-20 09:31:57.232 | INFO     | src.entities.goose:honk:81 - [HORN] Боба honks, honk_volume=7
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (11) from balance of Олег. Current balance: 18545
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (11) from balance of Макс. Current balance: 78
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (11) from balance of Кира. Current balance: 4865
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(33) to balance of Боба (Goose)
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:_event_drivergoose_horn:332 - [LOSE] DriverGoose honked and stole 33 from each player
+2025-12-20 09:31:57.232 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 72
+2025-12-20 09:31:57.233 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Кевин-Биба trying to steal 37 from player Макс
+2025-12-20 09:31:57.233 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (37) from balance of Макс. Current balance: 41
+2025-12-20 09:31:57.233 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(37) to balance of Кевин-Биба (Goose)
+2025-12-20 09:31:57.233 | INFO     | src.simulation.casino:steal_from_player:171 - SUCCESS - Goose Кевин-Биба stole 37 from Макс.
+2025-12-20 09:31:57.233 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Кира lost half of his money: 2432
+2025-12-20 09:31:57.233 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (2432) from balance of Кира. Current balance: 2433
+2025-12-20 09:31:57.233 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Кевин trying to steal 13 from player Макс
+2025-12-20 09:31:57.233 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (13) from balance of Макс. Current balance: 28
+2025-12-20 09:31:57.233 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(13) to balance of Кевин (Goose)
+2025-12-20 09:31:57.233 | INFO     | src.simulation.casino:steal_from_player:171 - SUCCESS - Goose Кевин stole 13 from Макс.
+2025-12-20 09:31:57.233 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Олег lost half of his money: 9272
+2025-12-20 09:31:57.233 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (9272) from balance of Олег. Current balance: 9273
+2025-12-20 09:31:57.233 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:31:57.233 | INFO     | src.simulation.run_simulation:run_simulation:48 - Simulation completed after 20 steps
+2025-12-20 09:35:34.091 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 12345234
+2025-12-20 09:35:34.091 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=5, seed=12345234
+2025-12-20 09:35:34.092 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 09:35:34.092 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 09:35:34.092 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 09:35:34.092 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 09:35:34.092 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 09:35:34.092 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 09:35:34.092 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 09:35:34.092 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 09:35:34.092 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:35:34.093 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Биба-Боба (hp=70), honk_volume=5
+2025-12-20 09:35:34.093 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба-Боба
+2025-12-20 09:35:34.093 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Макс lost half of his money: 500
+2025-12-20 09:35:34.093 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (500) from balance of Макс. Current balance: 500
+2025-12-20 09:35:34.093 | INFO     | src.entities.goose:rob:53 - [HEIST] Биба attacks Макс for 14 damage
+2025-12-20 09:35:34.093 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (14) from balance of Макс. Current balance: 486
+2025-12-20 09:35:34.093 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(14) to balance of Биба (Goose)
+2025-12-20 09:35:34.093 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Боба-Биба-Боба (hp=100), honk_volume=8
+2025-12-20 09:35:34.094 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба-Биба-Боба
+2025-12-20 09:35:34.094 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (3198) from balance of Кира. Current balance: 6802
+2025-12-20 09:35:34.094 | INFO     | src.simulation.casino:bet:219 - [LOSE] Player Кира lost 3198
+2025-12-20 09:35:34.094 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Кира -> 6802
+2025-12-20 09:35:34.094 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:35:34.094 | INFO     | src.simulation.run_simulation:run_simulation:48 - Simulation completed after 5 steps
+2025-12-20 09:35:43.382 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 123152431
+2025-12-20 09:35:43.383 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=5, seed=123152431
+2025-12-20 09:35:43.383 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 09:35:43.383 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 09:35:43.383 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 09:35:43.383 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 09:35:43.383 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 09:35:43.383 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 09:35:43.383 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 09:35:43.383 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 09:35:43.384 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:35:43.384 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Кевин trying to steal 29 from player Кира
+2025-12-20 09:35:43.384 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (29) from balance of Кира. Current balance: 9971
+2025-12-20 09:35:43.384 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(29) to balance of Кевин (Goose)
+2025-12-20 09:35:43.384 | INFO     | src.simulation.casino:steal_from_player:171 - SUCCESS - Goose Кевин stole 29 from Кира.
+2025-12-20 09:35:43.384 | INFO     | src.entities.goose:trap:60 - [TRAP] Макс fell into Кевин's trap and lost 93 money!
+2025-12-20 09:35:43.384 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (93) from balance of Макс. Current balance: 907
+2025-12-20 09:35:43.384 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(93) to balance of Кевин (Goose)
+2025-12-20 09:35:43.384 | INFO     | src.entities.goose:__call__:71 - [DriverGoose] Боба called
+2025-12-20 09:35:43.384 | INFO     | src.entities.goose:honk:81 - [HORN] Боба honks, honk_volume=4
+2025-12-20 09:35:43.384 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (7) from balance of Олег. Current balance: 493
+2025-12-20 09:35:43.384 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (7) from balance of Макс. Current balance: 900
+2025-12-20 09:35:43.384 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (7) from balance of Кира. Current balance: 9964
+2025-12-20 09:35:43.384 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(21) to balance of Боба (Goose)
+2025-12-20 09:35:43.384 | INFO     | src.simulation.casino:_event_drivergoose_horn:332 - [LOSE] DriverGoose honked and stole 21 from each player
+2025-12-20 09:35:43.384 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 36
+2025-12-20 09:35:43.385 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Буба-Кевин (hp=300), honk_volume=13
+2025-12-20 09:35:43.385 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба-Кевин
+2025-12-20 09:35:43.385 | INFO     | src.entities.goose:rob:53 - [HEIST] Биба attacks Олег for 8 damage
+2025-12-20 09:35:43.385 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (8) from balance of Олег. Current balance: 485
+2025-12-20 09:35:43.385 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(8) to balance of Биба (Goose)
+2025-12-20 09:35:43.385 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:35:43.385 | INFO     | src.simulation.run_simulation:run_simulation:48 - Simulation completed after 5 steps
+2025-12-20 09:35:56.597 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 1231232332
+2025-12-20 09:35:56.597 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=5, seed=1231232332
+2025-12-20 09:35:56.597 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 09:35:56.597 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 09:35:56.597 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 09:35:56.598 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 09:35:56.598 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 09:35:56.598 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 09:35:56.598 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 09:35:56.598 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 09:35:56.598 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:35:56.598 | INFO     | src.entities.goose:trap:60 - [TRAP] Кира fell into Кевин's trap and lost 60 money!
+2025-12-20 09:35:56.598 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (60) from balance of Кира. Current balance: 9940
+2025-12-20 09:35:56.598 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(60) to balance of Кевин (Goose)
+2025-12-20 09:35:56.598 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Олег lost half of his money: 250
+2025-12-20 09:35:56.599 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (250) from balance of Олег. Current balance: 250
+2025-12-20 09:35:56.599 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Олег lost half of his money: 125
+2025-12-20 09:35:56.599 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (125) from balance of Олег. Current balance: 125
+2025-12-20 09:35:56.599 | INFO     | src.entities.goose:__add__:41 - [Goose] Flock formed: Кевин-Биба (hp=240), honk_volume=12
+2025-12-20 09:35:56.599 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин-Биба
+2025-12-20 09:35:56.599 | INFO     | src.simulation.casino:_event_player_panic:374 - [PANIC] Макс lost half of his money: 500
+2025-12-20 09:35:56.599 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (500) from balance of Макс. Current balance: 500
+2025-12-20 09:35:56.599 | INFO     | src.simulation.casino:show_state:390 - Showed state.
+2025-12-20 09:35:56.599 | INFO     | src.simulation.run_simulation:run_simulation:48 - Simulation completed after 5 steps

@@ -37,7 +37,7 @@ class Goose:
 
         combined_balance = ChipCollection()
         combined_balance.data = self.balance.data + other.balance.data
-        print(f"Стая сформирована: {name} (hp={hp}), honk_volume={honk_volume}")
+        print(f"[СТАЯ] Сформирована стая: {name} (hp={hp}), honk_volume={honk_volume}")
         logger.info(f"[Goose] Flock formed: {name} (hp={hp}), honk_volume={honk_volume}")
         return Goose(name, hp, honk_volume, balance=combined_balance)
 

@@ -12,12 +12,14 @@ from src.collections.goose_collection import GooseCollection
 
 class Casino:
     def __init__(self, players: PlayerCollection = None, gooses: GooseCollection = None) -> None:
+        # Initialize collections
         self.players: PlayerCollection = PlayerCollection()
         self.gooses: GooseCollection = GooseCollection()
         self.balances: CasinoBalance = CasinoBalance()
         self.goose_ledger: CasinoBalance = CasinoBalance()
         self.balance = 0
 
+        # Register players and geese
         if players is not None:
             for player in players:
                 self.register_player(player)
@@ -25,6 +27,17 @@ class Casino:
         if gooses is not None:
             for goose in gooses:
                 self.register_goose(goose)
+
+        # Initialize event
+        self.events = [
+            self._event_player_bet,
+            self._event_wetbanditgoose_rob,
+            self._event_drivergoose_horn,
+            self._event_goose_steal,
+            self._event_goose_flock,
+            self._event_player_panic,
+            self._event_kevingoose_trap
+        ]
 
         logger.info("Initialized Casino object.")
 
@@ -112,17 +125,8 @@ class Casino:
         """
         Execute one random event in the simulation.
         """
-        events = [
-            self._event_player_bet,
-            self._event_wetbanditgoose_rob,
-            self._event_drivergoose_horn,
-            self._event_goose_steal,
-            self._event_goose_flock,
-            self._event_player_panic,
-            self._event_kevingoose_trap
-        ]
-        event = random.choice(events)
-        
+        event = random.choice(self.events)
+        print(event)
         event()
 
     def register_player(self, player: Player) -> None:
