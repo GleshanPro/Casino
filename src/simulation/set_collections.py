@@ -90,7 +90,7 @@ def set_players(want_modifying: bool) -> PlayerCollection:
 
     # Create default
     players = PlayerCollection()
-    oleg = Player(name="Олег", balance=ChipCollection([Chip(500)]))
+    oleg = Player(name="Олег", balance=ChipCollection([Chip(10), Chip(25), Chip(50), Chip(500), Chip(500), Chip(1000)]))
     max = Player(name="Макс", balance=ChipCollection([Chip(1000)]))
     kira = Player(name="Кира", balance=ChipCollection([Chip(10000)]))
     players.append(oleg)
@@ -179,9 +179,9 @@ def set_gooses(want_modifying: bool) -> GooseCollection:
     # Сreate default gooses first
     gooses = GooseCollection()
     gus_balance = ChipCollection([Chip(10)])
-    boba_balance = ChipCollection([Chip(15)])
+    boba_balance = ChipCollection([Chip(25)])
     buba_balance = ChipCollection([Chip(0)])
-    kevin_balance = ChipCollection([Chip(100)])
+    kevin_balance = ChipCollection([Chip(10), Chip(10), Chip(5), Chip(5), Chip(5), Chip(10)])
     biba = WetBanditGoose(name="Биба", hp=40, honk_volume=2, balance=gus_balance)
     boba = DriverGoose(name="Боба", hp=30, honk_volume=3, balance=boba_balance)
     buba = Goose(name="Буба", hp=100, honk_volume=3, balance=buba_balance)

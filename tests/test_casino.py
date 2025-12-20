@@ -72,7 +72,7 @@ class TestCasino:
         casino = Casino()
         player = Player("Alice", ChipCollection([Chip(100)]))
         casino.register_player(player)
-        casino.add_chip_to_balance(player, 50)
+        casino.add_chip_to_balance(player.name, 50)
         assert casino.balances["Alice"].total_value() == 150
 
     def test_add_chip_to_balance_goose(self):
@@ -80,23 +80,16 @@ class TestCasino:
         casino = Casino()
         goose = Goose("Gus", 50, 2, ChipCollection([Chip(10)]))
         casino.register_goose(goose)
-        casino.add_chip_to_balance(goose, 20)
+        casino.add_chip_to_balance(goose.name, 20, True)
         assert casino.goose_ledger["Gus"].total_value() == 30
 
-    def test_add_chip_to_balance_by_name(self):
-        """Test adding chip to balance by player name"""
-        casino = Casino()
-        player = Player("Alice", ChipCollection([Chip(100)]))
-        casino.register_player(player)
-        casino.add_chip_to_balance("Alice", 50)
-        assert casino.balances["Alice"].total_value() == 150
 
     def test_remove_chip_from_balance_success(self):
         """Test removing chips from balance successfully"""
         casino = Casino()
         player = Player("Alice", ChipCollection([Chip(100)]))
         casino.register_player(player)
-        result = casino.remove_chip_from_balance(player, 30)
+        result = casino.remove_chip_from_balance(player.name, 30)
         assert result is True
         assert casino.balances["Alice"].total_value() == 70
 
@@ -106,7 +99,7 @@ class TestCasino:
         casino = Casino()
         player = Player("Alice", ChipCollection([Chip(100)]))
         casino.register_player(player)
-        result = casino.remove_chip_from_balance(player, 30)
+        result = casino.remove_chip_from_balance(player.name, 30)
         assert result is True
         # Should have 70 remaining
         assert casino.balances["Alice"].total_value() == 70

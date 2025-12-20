@@ -28,7 +28,7 @@ class Casino:
             for goose in gooses:
                 self.register_goose(goose)
 
-        # Initialize event
+        # Initialize events
         self.events = [
             self._event_player_bet,
             self._event_wetbanditgoose_rob,
@@ -47,23 +47,17 @@ class Casino:
         """
         return balance.total_value() if balance else 0
 
-    def add_chip_to_balance(self, entity: Player | Goose | str, amount: int) -> None:
+    def add_chip_to_balance(self, name: str, amount: int, is_goose: bool = False) -> None:
         """
         Add chip to a ChipCollection
         """
-        balance = None
         goose_text = ""
-        name = ""
-        if isinstance(entity, Player):
-            balance = self.balances[entity.name]
-            name = entity.name
-        elif isinstance(entity, Goose):
+        if is_goose:
             goose_text = " (Goose)"
-            balance = self.goose_ledger[entity.name]
-            name = entity.name
-        elif isinstance(entity, str):
-            balance = self.balances[entity]
-            name = entity
+            balance = self.goose_ledger[name]
+        else:
+            balance = self.balances[name]
+            name = name
 
         if amount > 0:
             balance.append(Chip(amount))
@@ -71,24 +65,18 @@ class Casino:
             logger.info(f"Added Chip({amount}) to balance of {name}{goose_text}")
 
 
-    def remove_chip_from_balance(self, entity: Player | Goose | str, amount: int) -> bool:
+    def remove_chip_from_balance(self, name: str, amount: int, is_goose: bool = False) -> bool:
         """
         Remove chips from balance.
         Returns True if successful, False if insufficient funds.
         """
-        balance = None
         goose_text = ""
-        name = ""
-        if isinstance(entity, Player):
-            balance = self.balances[entity.name]
-            name = entity.name
-        elif isinstance(entity, Goose):
+        if is_goose:
             goose_text = " (Goose)"
-            balance = self.goose_ledger[entity.name]
-            name = entity.name
-        elif isinstance(entity, str):
-            balance = self.balances[entity]
-            name = entity
+            balance = self.goose_ledger[name]
+        else:
+            balance = self.balances[name]
+            name = name
 
         amount = int(amount)
         total = self.get_balance_total(balance)
@@ -117,7 +105,6 @@ class Casino:
 
         new_balance = self.get_balance_total(balance)
         logger.info(f"Removed Chips for amount ({amount}) from balance of {name}{goose_text}. Current balance: {new_balance}")
-        # print(f"\t\tТекущий баланс {name} = {new_balance}")
 
         return True
 
@@ -162,11 +149,11 @@ class Casino:
         if success:
             if amount > 0:
                 self.remove_chip_from_balance(player_name, amount)
-                self.add_chip_to_balance(goose, amount)
+                self.add_chip_to_balance(goose.name, amount, True)
             else:
                 goose_balance = ChipCollection()
                 self.goose_ledger[goose.name] = goose_balance
-                self.add_chip_to_balance(goose, amount)
+                self.add_chip_to_balance(goose.name, amount, True)
             print(f"[СВОРОВАЛ] Игрок {player_name} загляделся на новогоднюю ёлку с ярко горящими гирляндами и шарами, а гусь {goose.name} - не пальцем деланный, воспользовался этим и успешно своровал у него {amount} рублей.")
             logger.info(f"SUCCESS - Goose {goose.name} stole {amount} from {player_name}.")
         else:
@@ -242,62 +229,46 @@ class Casino:
         print(f"[СТАВКА] {player_name} делает ставку в размере {bet_amount}")
         self.bet(player_name, bet_amount)
 
-    def _event_kevingoose_trap(self) -> None:
-        """
-        KevinGoose attacks a random player.
-        """
-
-        kevingooses = [g for g in self.gooses if isinstance(g, KevinGoose)]
-        if not kevingooses:
+    def pick_random_goose(self, GooseType: Goose) -> Goose | None:
+        gooses = [g for g in self.gooses if isinstance(g, GooseType)]
+        if not gooses:
             return
 
-        goose: KevinGoose = random.choice(kevingooses)
+        return random.choice(gooses)
+    def goose_attack(self, GooseType: Goose, func_name: str) -> None:
+        """
+        General method for attacks
+        """
+
+        goose = self.pick_random_goose(GooseType)
         player = random.choice(self.players)
         player_name = player.name
 
-        damage = goose.trap(player)
+        damage = getattr(goose, func_name)(player)
         player_balance = self.balances[player_name]
         player_total = self.get_balance_total(player_balance)
 
         if player_total >= damage:
             self.remove_chip_from_balance(player_name, damage)
             # Goose gains money from attack
-            self.add_chip_to_balance(goose, damage)
+            self.add_chip_to_balance(goose.name, damage, True)
         else:
             # Take all remaining money
             if player_total > 0:
                 self.remove_chip_from_balance(player_name, player_total)
-                self.add_chip_to_balance(goose, player_total)
+                self.add_chip_to_balance(goose.name, player_total, True)
+
+    def _event_kevingoose_trap(self) -> None:
+        """
+        KevinGoose attacks a random player.
+        """
+        self.goose_attack(KevinGoose, "trap")
 
     def _event_wetbanditgoose_rob(self) -> None:
         """
         WetBanditGoose attacks a random player.
         """
-        if not self.players or not self.gooses:
-            return
-
-        # Find WetBanditGoose instances
-        wetbanditgooses = [g for g in self.gooses if isinstance(g, WetBanditGoose)]
-        if not wetbanditgooses:
-            return
-
-        goose = random.choice(wetbanditgooses)
-        player = random.choice(self.players)
-        player_name = player.name
-
-        damage = goose.rob(player)
-        player_balance = self.balances[player_name]
-        player_total = self.get_balance_total(player_balance)
-
-        if player_total >= damage:
-            self.remove_chip_from_balance(player_name, damage)
-            # Goose gains money from attack
-            self.add_chip_to_balance(goose, damage)
-        else:
-            # Take all remaining money
-            if player_total > 0:
-                self.remove_chip_from_balance(player_name, player_total)
-                self.add_chip_to_balance(goose, player_total)
+        self.goose_attack(WetBanditGoose, "rob")
 
     def _event_drivergoose_horn(self) -> None:
         """
@@ -307,11 +278,7 @@ class Casino:
             return
 
         # Find DriverGoose instances
-        drivergooses = [g for g in self.gooses if isinstance(g, DriverGoose)]
-        if not drivergooses:
-            return
-
-        goose = random.choice(drivergooses)
+        goose: DriverGoose = self.pick_random_goose(DriverGoose)
 
         honk_damage = goose()
         total_stolen = 0
@@ -329,7 +296,7 @@ class Casino:
 
         # Goose gains all stolen money
         if total_stolen > 0:
-            self.add_chip_to_balance(goose, total_stolen)
+            self.add_chip_to_balance(goose.name, total_stolen, True)
             print(f"[ПОТЕРЯ] От гудка {goose.name} все игроки подпрыгнули и обронили в общем счёте {total_stolen} рублей!")
             logger.info(f"[LOSE] DriverGoose honked and stole {total_stolen} from each player")
             self.print_balance_update_entity(goose)
@@ -374,10 +341,13 @@ class Casino:
 
         print(f"[ПАНИКА] {player.name} поверил, что прохожий с бородой - Дед Мороз и отгрохал ему ПОЛОВИНУ своего СОСТОЯНИЯ! ({lost_amount} рублей потеряно)")
         logger.info(f"[PANIC] {player.name} lost half of his money: {lost_amount}")
-        # Clear all chips
-        self.remove_chip_from_balance(player, lost_amount)
+
+        self.remove_chip_from_balance(player.name, lost_amount)
 
     def show_state(self) -> None:
+        """
+        Show current state of the game: casino's, players' and geese's balances.
+        """
         print('\n--- CASINO STATE ---')
         print("Players:")
         for name, balance in self.balances.items():

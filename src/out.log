@@ -120,3 +120,66 @@
 2025-12-20 18:59:31.808 | INFO     | src.simulation.casino:steal_from_player:171 - SUCCESS - Goose Боба-Буба-Биба stole 0 from Олег.
 2025-12-20 18:59:31.809 | INFO     | src.simulation.casino:show_state:392 - Showed state.
 2025-12-20 18:59:31.809 | INFO     | src.simulation.run_simulation:run_simulation:49 - Simulation completed after 20 steps
+2025-12-20 21:36:41.987 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 2132
+2025-12-20 21:36:41.987 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=1, seed=2132
+2025-12-20 21:36:41.987 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 21:36:41.987 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 21:36:41.987 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 21:36:41.987 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 21:36:41.987 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 21:36:41.988 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 21:36:41.988 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 21:36:41.988 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 21:36:41.988 | INFO     | src.simulation.casino:show_state:392 - Showed state.
+2025-12-20 21:36:41.988 | INFO     | src.simulation.casino:show_state:392 - Showed state.
+2025-12-20 21:36:41.988 | INFO     | src.simulation.run_simulation:run_simulation:49 - Simulation completed after 1 steps
+2025-12-20 22:30:17.420 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 123124
+2025-12-20 22:30:17.431 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=1, seed=123124
+2025-12-20 22:30:17.433 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 22:30:17.434 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 22:30:17.435 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 22:30:17.436 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 22:30:17.436 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 22:30:17.437 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 22:30:17.438 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 22:30:17.438 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 22:30:20.452 | INFO     | src.simulation.casino:show_state:392 - Showed state.
+2025-12-20 22:31:13.943 | INFO     | src.simulation.casino:show_state:392 - Showed state.
+2025-12-20 22:32:36.153 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 1
+2025-12-20 22:32:36.153 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=1, seed=1
+2025-12-20 22:32:36.153 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 22:32:36.153 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 22:32:36.154 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 22:32:36.154 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 22:32:36.154 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 22:32:36.154 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 22:32:36.154 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 22:32:36.154 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 22:32:36.154 | INFO     | src.simulation.casino:show_state:392 - Showed state.
+2025-12-20 22:37:52.548 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 1
+2025-12-20 22:37:52.548 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=1, seed=1
+2025-12-20 22:37:52.549 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 22:37:52.549 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 22:37:52.549 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 22:37:52.549 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 22:37:52.549 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 22:37:52.549 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 22:37:52.549 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 22:37:52.550 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 22:37:52.550 | INFO     | src.simulation.casino:show_state:392 - Showed state.
+2025-12-20 22:39:58.550 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 1
+2025-12-20 22:39:58.550 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=1, seed=1
+2025-12-20 22:39:58.550 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 22:39:58.550 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 22:39:58.551 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 22:39:58.551 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 22:39:58.551 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 22:39:58.551 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 22:39:58.551 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 22:39:58.551 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 22:39:58.551 | INFO     | src.simulation.casino:show_state:392 - Showed state.
+2025-12-20 22:39:58.551 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---1 step---
+2025-12-20 22:39:58.552 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_wetbanditgoose_rob of <src.simulation.casino.Casino object at 0x00000231B463A120>>---
+2025-12-20 22:39:58.552 | INFO     | src.entities.goose:rob:54 - [HEIST] Биба attacks Макс for 9 damage
+2025-12-20 22:39:58.552 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (9) from balance of Макс. Current balance: 991
+2025-12-20 22:39:58.552 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(9) to balance of Биба (Goose)
