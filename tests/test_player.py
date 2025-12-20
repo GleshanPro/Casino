@@ -36,6 +36,7 @@ class TestPlayer:
         player2 = Player("Alice", balance2)
         player3 = Player("Bob", balance1)
 
+        assert ChipCollection([Chip(100)]) == ChipCollection([Chip(100)])
         assert player1 == player2
         assert player1 != player3
 

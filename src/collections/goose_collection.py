@@ -6,7 +6,7 @@ class GooseCollection(UserList):
     List-like collection for Goose objects
     """
 
-    def __init__(self, initlist: list[Goose] =None):
+    def __init__(self, initlist: list[Goose] | None = None):
         if initlist is None:
             initlist = []
         super().__init__(initlist)
@@ -22,15 +22,15 @@ class GooseCollection(UserList):
             return GooseCollection(self.data[index])
         return self.data[index]
 
-    def append(self, item: Goose):
+    def append(self, item):
         self.data.append(item)
 
-    def remove(self, item: Goose):
+    def remove(self, item):
         if item not in self.data:
             raise ValueError(f"{item} not in collection")
         self.data.remove(item)
 
-    def __contains__(self, item: Goose):
+    def __contains__(self, item):
         return item in self.data
 
     def __repr__(self):

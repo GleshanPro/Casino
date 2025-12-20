@@ -89,8 +89,8 @@ class TestChipCollection:
         collection = ChipCollection([Chip(10), Chip(20), Chip(30)])
         assert collection.total_value() == 60
 
-    def test_repr_shows_total(self):
-        """Test __repr__ shows total value"""
+    def test_str_shows_total(self):
+        """Test __str__ shows total value"""
         collection = ChipCollection([Chip(10), Chip(20)])
-        repr_str = repr(collection)
-        assert repr_str == "30"  # Should show total value
+        string = str(collection)
+        assert string == "30"  # Should show total value

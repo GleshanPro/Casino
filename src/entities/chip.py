@@ -8,7 +8,7 @@ class Chip[T]:
     def __init__(self, amount: int):
         self.amount = int(amount)
 
-    def __add__(self, other: T):
+    def __add__(self, other):
         """
         Add Chip as a left operand
         """
@@ -24,13 +24,13 @@ class Chip[T]:
 
         return Chip(amount)
 
-    def __radd__(self, other: T) -> T:
+    def __radd__(self, other) -> T:
         """
         Add Chip as a right operand
         """
         return self.__add__(other)
 
-    def __eq__(self, other: T | int):
+    def __eq__(self, other):
         if not isinstance(other, (Chip, int)):
             logger.error("Tried to compare Chip to incompatible type")
             return NotImplemented

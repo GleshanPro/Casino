@@ -49,5 +49,5 @@ class TestCasinoBalance:
     def test_remove_money_key_error(self):
         """Test removing money for non-existent key raises KeyError"""
         balance = CasinoBalance()
-        with pytest.raises(KeyError, match="not found in balance"):
+        with pytest.raises(KeyError, match="not found in casino balances"):
             balance.remove_money("Nonexistent", 50)

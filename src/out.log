@@ -1,0 +1,122 @@
+2025-12-20 18:59:31.620 | INFO     | src.simulation.run_simulation:run_simulation:19 - Random seed set to 123213
+2025-12-20 18:59:31.624 | INFO     | src.simulation.run_simulation:run_simulation:21 - Started simulation with parameters: steps=20, seed=123213
+2025-12-20 18:59:31.625 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Олег
+2025-12-20 18:59:31.625 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Макс
+2025-12-20 18:59:31.707 | INFO     | src.simulation.casino:register_player:136 - Registered player, name=Кира
+2025-12-20 18:59:31.707 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Биба
+2025-12-20 18:59:31.707 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба
+2025-12-20 18:59:31.745 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Буба
+2025-12-20 18:59:31.746 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин
+2025-12-20 18:59:31.746 | INFO     | src.simulation.casino:__init__:42 - Initialized Casino object.
+2025-12-20 18:59:31.746 | INFO     | src.simulation.casino:show_state:392 - Showed state.
+2025-12-20 18:59:31.746 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---1 step---
+2025-12-20 18:59:31.746 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_goose_steal of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.754 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Биба trying to steal 37 from player Макс
+2025-12-20 18:59:31.754 | INFO     | src.simulation.casino:steal_from_player:174 - FAILURE - Goose Биба didn't steel anything from Макс.
+2025-12-20 18:59:31.754 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---2 step---
+2025-12-20 18:59:31.755 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_drivergoose_horn of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.755 | INFO     | src.entities.goose:__call__:72 - [DriverGoose] Боба called
+2025-12-20 18:59:31.755 | INFO     | src.entities.goose:honk:82 - [HORN] Боба honks, honk_volume=6
+2025-12-20 18:59:31.755 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (15) from balance of Олег. Current balance: 485
+2025-12-20 18:59:31.755 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (15) from balance of Макс. Current balance: 985
+2025-12-20 18:59:31.755 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (15) from balance of Кира. Current balance: 9985
+2025-12-20 18:59:31.755 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(45) to balance of Боба (Goose)
+2025-12-20 18:59:31.755 | INFO     | src.simulation.casino:_event_drivergoose_horn:334 - [LOSE] DriverGoose honked and stole 45 from each player
+2025-12-20 18:59:31.755 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 60
+2025-12-20 18:59:31.755 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---3 step---
+2025-12-20 18:59:31.755 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_player_panic of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.755 | INFO     | src.simulation.casino:_event_player_panic:376 - [PANIC] Олег lost half of his money: 242
+2025-12-20 18:59:31.755 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (242) from balance of Олег. Current balance: 243
+2025-12-20 18:59:31.755 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---4 step---
+2025-12-20 18:59:31.755 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_player_bet of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.756 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (1518) from balance of Кира. Current balance: 8467
+2025-12-20 18:59:31.756 | INFO     | src.simulation.casino:bet:219 - [LOSE] Player Кира lost 1518
+2025-12-20 18:59:31.756 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Кира -> 8467
+2025-12-20 18:59:31.756 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---5 step---
+2025-12-20 18:59:31.756 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_kevingoose_trap of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.756 | INFO     | src.entities.goose:trap:61 - [TRAP] Олег fell into Кевин's trap and lost 62 money!
+2025-12-20 18:59:31.756 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (62) from balance of Олег. Current balance: 181
+2025-12-20 18:59:31.756 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(62) to balance of Кевин (Goose)
+2025-12-20 18:59:31.756 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---6 step---
+2025-12-20 18:59:31.756 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_kevingoose_trap of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.756 | INFO     | src.entities.goose:trap:61 - [TRAP] Олег fell into Кевин's trap and lost 87 money!
+2025-12-20 18:59:31.756 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (87) from balance of Олег. Current balance: 94
+2025-12-20 18:59:31.756 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(87) to balance of Кевин (Goose)
+2025-12-20 18:59:31.756 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---7 step---
+2025-12-20 18:59:31.756 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_player_bet of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.756 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (68) from balance of Олег. Current balance: 26
+2025-12-20 18:59:31.756 | INFO     | src.simulation.casino:bet:219 - [LOSE] Player Олег lost 68
+2025-12-20 18:59:31.756 | INFO     | src.simulation.casino:print_balance_update:183 - [BALANCE UPD] Олег -> 26
+2025-12-20 18:59:31.756 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---8 step---
+2025-12-20 18:59:31.757 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_drivergoose_horn of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.757 | INFO     | src.entities.goose:__call__:72 - [DriverGoose] Боба called
+2025-12-20 18:59:31.757 | INFO     | src.entities.goose:honk:82 - [HORN] Боба honks, honk_volume=8
+2025-12-20 18:59:31.757 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (19) from balance of Олег. Current balance: 7
+2025-12-20 18:59:31.757 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (19) from balance of Макс. Current balance: 966
+2025-12-20 18:59:31.757 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (19) from balance of Кира. Current balance: 8448
+2025-12-20 18:59:31.757 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(57) to balance of Боба (Goose)
+2025-12-20 18:59:31.757 | INFO     | src.simulation.casino:_event_drivergoose_horn:334 - [LOSE] DriverGoose honked and stole 57 from each player
+2025-12-20 18:59:31.757 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 117
+2025-12-20 18:59:31.757 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---9 step---
+2025-12-20 18:59:31.757 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_goose_flock of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.757 | INFO     | src.entities.goose:__add__:42 - [Goose] Flock formed: Кевин-Боба (hp=230), honk_volume=18
+2025-12-20 18:59:31.757 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин-Боба
+2025-12-20 18:59:31.757 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---10 step---
+2025-12-20 18:59:31.757 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_goose_flock of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.757 | INFO     | src.entities.goose:__add__:42 - [Goose] Flock formed: Боба-Буба (hp=130), honk_volume=11
+2025-12-20 18:59:31.757 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба-Буба
+2025-12-20 18:59:31.757 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---11 step---
+2025-12-20 18:59:31.758 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_kevingoose_trap of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.758 | INFO     | src.entities.goose:trap:61 - [TRAP] Олег fell into Кевин's trap and lost 44 money!
+2025-12-20 18:59:31.758 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (7) from balance of Олег. Current balance: 0
+2025-12-20 18:59:31.758 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(7) to balance of Кевин (Goose)
+2025-12-20 18:59:31.758 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---12 step---
+2025-12-20 18:59:31.758 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_player_panic of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.758 | INFO     | src.simulation.casino:_event_player_panic:376 - [PANIC] Макс lost half of his money: 483
+2025-12-20 18:59:31.758 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (483) from balance of Макс. Current balance: 483
+2025-12-20 18:59:31.758 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---13 step---
+2025-12-20 18:59:31.758 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_drivergoose_horn of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.758 | INFO     | src.entities.goose:__call__:72 - [DriverGoose] Боба called
+2025-12-20 18:59:31.758 | INFO     | src.entities.goose:honk:82 - [HORN] Боба honks, honk_volume=9
+2025-12-20 18:59:31.758 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (14) from balance of Макс. Current balance: 469
+2025-12-20 18:59:31.758 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (14) from balance of Кира. Current balance: 8434
+2025-12-20 18:59:31.758 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(28) to balance of Боба (Goose)
+2025-12-20 18:59:31.806 | INFO     | src.simulation.casino:_event_drivergoose_horn:334 - [LOSE] DriverGoose honked and stole 28 from each player
+2025-12-20 18:59:31.806 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 145
+2025-12-20 18:59:31.806 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---14 step---
+2025-12-20 18:59:31.806 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_player_panic of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.806 | INFO     | src.simulation.casino:_event_player_panic:376 - [PANIC] Кира lost half of his money: 4217
+2025-12-20 18:59:31.807 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (4217) from balance of Кира. Current balance: 4217
+2025-12-20 18:59:31.807 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---15 step---
+2025-12-20 18:59:31.807 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_wetbanditgoose_rob of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.807 | INFO     | src.entities.goose:rob:54 - [HEIST] Биба attacks Макс for 8 damage
+2025-12-20 18:59:31.807 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (8) from balance of Макс. Current balance: 461
+2025-12-20 18:59:31.807 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(8) to balance of Биба (Goose)
+2025-12-20 18:59:31.807 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---16 step---
+2025-12-20 18:59:31.807 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_goose_flock of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.807 | INFO     | src.entities.goose:__add__:42 - [Goose] Flock formed: Кевин-Боба-Биба (hp=270), honk_volume=20
+2025-12-20 18:59:31.807 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Кевин-Боба-Биба
+2025-12-20 18:59:31.807 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---17 step---
+2025-12-20 18:59:31.807 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_wetbanditgoose_rob of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.807 | INFO     | src.entities.goose:rob:54 - [HEIST] Биба attacks Кира for 10 damage
+2025-12-20 18:59:31.807 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (10) from balance of Кира. Current balance: 4207
+2025-12-20 18:59:31.808 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(10) to balance of Биба (Goose)
+2025-12-20 18:59:31.808 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---18 step---
+2025-12-20 18:59:31.808 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_drivergoose_horn of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.808 | INFO     | src.entities.goose:__call__:72 - [DriverGoose] Боба called
+2025-12-20 18:59:31.808 | INFO     | src.entities.goose:honk:82 - [HORN] Боба honks, honk_volume=10
+2025-12-20 18:59:31.808 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (12) from balance of Макс. Current balance: 449
+2025-12-20 18:59:31.808 | INFO     | src.simulation.casino:remove_chip_from_balance:119 - Removed Chips for amount (12) from balance of Кира. Current balance: 4195
+2025-12-20 18:59:31.808 | INFO     | src.simulation.casino:add_chip_to_balance:71 - Added Chip(24) to balance of Боба (Goose)
+2025-12-20 18:59:31.808 | INFO     | src.simulation.casino:_event_drivergoose_horn:334 - [LOSE] DriverGoose honked and stole 24 from each player
+2025-12-20 18:59:31.808 | INFO     | src.simulation.casino:print_balance_update_entity:179 - [BALANCE UPD] <class 'src.entities.goose.DriverGoose'> Боба -> 169
+2025-12-20 18:59:31.808 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---19 step---
+2025-12-20 18:59:31.808 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_goose_flock of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.808 | INFO     | src.entities.goose:__add__:42 - [Goose] Flock formed: Боба-Буба-Биба (hp=170), honk_volume=13
+2025-12-20 18:59:31.808 | INFO     | src.simulation.casino:register_goose:142 - Registered goose, name=Боба-Буба-Биба
+2025-12-20 18:59:31.808 | INFO     | src.simulation.run_simulation:run_simulation:34 - ---20 step---
+2025-12-20 18:59:31.808 | INFO     | src.simulation.casino:run_step:129 - ---Event: <bound method Casino._event_goose_steal of <src.simulation.casino.Casino object at 0x000002350249A7B0>>---
+2025-12-20 18:59:31.808 | INFO     | src.simulation.casino:steal_from_player:159 - Goose Боба-Буба-Биба trying to steal 0 from player Олег
+2025-12-20 18:59:31.808 | INFO     | src.simulation.casino:steal_from_player:171 - SUCCESS - Goose Боба-Буба-Биба stole 0 from Олег.
+2025-12-20 18:59:31.809 | INFO     | src.simulation.casino:show_state:392 - Showed state.
+2025-12-20 18:59:31.809 | INFO     | src.simulation.run_simulation:run_simulation:49 - Simulation completed after 20 steps

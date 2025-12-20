@@ -31,15 +31,16 @@ def run_simulation(steps: int = 20, seed: int | None = None, want_modyfing: bool
 
     for i in range(1, steps + 1):
         print(f"---{i}-Я ЛОЖКА ОЛИВЬЕ, АМ-НЯМ-НЯМ...---\n")
+        logger.info(f"---{i} step---")
         casino.run_step()
         print()
 
     # Set balances
     for player in players:
-        player.balance = casino.balances.get(player.name, player.balance)
+        player.balance = casino.balances[player.name]
 
     for goose in gooses:
-        goose.balance = casino.goose_ledger.get(goose.name, goose.balance)
+        goose.balance = casino.goose_ledger[goose.name]
 
 
     print("\n=== ИТОГОВОЕ СОСТОЯНИЕ ===")

@@ -63,13 +63,16 @@ def input_gooses() -> GooseCollection:
                     balance.append(Chip(initial_balance))
 
             if goose_type == 'war':
-                goose = WetBanditGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                goose1 = WetBanditGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                gooses.append(goose1)
             elif goose_type == 'honk':
-                goose = DriverGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                goose2 = DriverGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                gooses.append(goose2)
             else:
-                goose = Goose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                goose3 = Goose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                gooses.append(goose3)
 
-            gooses.append(goose)
+
             print(f"✓ Гусь {name} добавлен")
         except ValueError:
             print("✗ Ошибка: введите целое число")
@@ -233,13 +236,16 @@ def set_gooses(want_modifying: bool) -> GooseCollection:
                 balance = ChipCollection()
 
                 if goose_type == 'war':
-                    new_goose = WetBanditGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                    new_goose1 = WetBanditGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                    gooses.append(new_goose1)
                 elif goose_type == 'honk':
-                    new_goose = DriverGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                    new_goose2 = DriverGoose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                    gooses.append(new_goose2)
                 else:
-                    new_goose = Goose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                    new_goose3 = Goose(name=name, hp=hp, honk_volume=honk_volume, balance=balance)
+                    gooses.append(new_goose3)
 
-                gooses.append(new_goose)
+
                 print(f"✓ Гусь {name} добавлен")
             except ValueError:
                 print("✗ Ошибка: введите целое число")

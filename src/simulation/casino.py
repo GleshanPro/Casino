@@ -11,7 +11,7 @@ from src.collections.player_collection import PlayerCollection
 from src.collections.goose_collection import GooseCollection
 
 class Casino:
-    def __init__(self, players: PlayerCollection = None, gooses: GooseCollection = None) -> None:
+    def __init__(self, players: PlayerCollection | None = None, gooses: GooseCollection | None = None) -> None:
         # Initialize collections
         self.players: PlayerCollection = PlayerCollection()
         self.gooses: GooseCollection = GooseCollection()
@@ -126,6 +126,7 @@ class Casino:
         Execute one random event in the simulation.
         """
         event = random.choice(self.events)
+        logger.info(f"---Event: {event}---")
         event()
 
     def register_player(self, player: Player) -> None:
@@ -141,7 +142,7 @@ class Casino:
             logger.info(f"Registered goose, name={goose.name}")
 
     def steal_from_player(self, goose: Goose, player_name: str, amount: int) -> None:
-        player_balance: Player = self.balances.get(player_name)
+        player_balance: ChipCollection = self.balances[player_name]
         if player_name not in self.balances:
             logger.warning(f"Player {player_name} not found. Players: {self.players}")
             return
@@ -176,7 +177,7 @@ class Casino:
         balance = self.get_balance_total(entity.balance)
         print(f"[ОБНОВЛЕНИЕ БАЛАНСА] Баланс {entity.name} -> {balance}")
         logger.info(f"[BALANCE UPD] {type(entity)} {entity.name} -> {balance}")
-        
+
     def print_balance_update(self, name: str, balance: int):
         print(f"[ОБНОВЛЕНИЕ БАЛАНСА] Баланс {name} -> {balance}")
         logger.info(f"[BALANCE UPD] {name} -> {balance}")
@@ -191,7 +192,7 @@ class Casino:
         return random.random() < probability
 
     def bet(self, player_name: str, amount: int):
-        player_balance: CasinoBalance = self.balances[player_name]
+        player_balance: ChipCollection = self.balances[player_name]
         total_value = self.get_balance_total(player_balance)
         if total_value < amount:
             logger.warning("Attempted to bet when unsufficient funds")
@@ -223,6 +224,7 @@ class Casino:
         Random player makes a bet.
         """
         if not self.players:
+            logger.warning("[!WARN!] No players")
             return
         player_name = random.choice(list(self.balances.keys()))
         player_balance = self.balances[player_name]
@@ -234,6 +236,7 @@ class Casino:
             bet_amount = player_total
 
         if bet_amount == 0:
+            print(f"[ПОПЫТКА СТАВКИ] {player_name} пытался сделать ставку, но у него нет денег(")
             return
 
         print(f"[СТАВКА] {player_name} делает ставку в размере {bet_amount}")
@@ -243,7 +246,7 @@ class Casino:
         """
         KevinGoose attacks a random player.
         """
-        
+
         kevingooses = [g for g in self.gooses if isinstance(g, KevinGoose)]
         if not kevingooses:
             return
@@ -309,7 +312,7 @@ class Casino:
             return
 
         goose = random.choice(drivergooses)
-        
+
         honk_damage = goose()
         total_stolen = 0
 

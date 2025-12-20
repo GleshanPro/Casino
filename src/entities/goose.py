@@ -20,7 +20,8 @@ class Goose:
         logger.info(f"[HONK] {self.name} honks, honk_volume={self.honk_volume}")
 
 
-    def rob(self, target: Player, damage: int) -> int:
+    def attack(self, target: Player, damage: int | None = None) -> int:
+        damage = damage or random.randint(3, 50)
         print(f"[АТАКА] Гусь {self.name} атакует игрока {target.name} и получает с него {damage} рублей")
         logger.info(f"[Goose] {self.name} attacks {target.name} for {damage} damage")
         return damage
@@ -54,12 +55,12 @@ class WetBanditGoose(Goose):
         return damage
 
 class KevinGoose(Goose):
-    def trap(self, target: Player, damage: int | None = None) -> None:
+    def trap(self, target: Player, damage: int | None = None) -> int:
         damage = damage or random.randint(1, 100)
         print(f"[ЛОВУШКА] Игрок {target.name} попался в ловушку гусю {self.name} и потерял {damage} рублей!")
         logger.info(f"[TRAP] {target.name} fell into {self.name}'s trap and lost {damage} money!")
         return damage
-    
+
     # def prank(self, target: Player, damage: int | None = None) -> None:
     #     damage = damage or random.randint(1, 50)
     #     print(f"[РОЗЫГРЫШ] Гусь {self.name} развёл игрока {target.name} попался в ловушку гусю  и потерял {damage} рублей!")
@@ -67,16 +68,16 @@ class KevinGoose(Goose):
     #     return damage
 
 class DriverGoose(Goose):
-    def __call__(self, times: int | None = None) -> None:
+    def __call__(self, times: int | None = None) -> int:
         logger.info(f"[DriverGoose] {self.name} called")
-        
+
         times = times or random.randint(1, 4)
         coef = 1 + random.random() * random.randint(1, 2)
-        
+
         self.honk_volume += times
-        return int(self.honk() * coef)
-        
-    def honk(self) -> None:
+        return int(self.horn() * coef)
+
+    def horn(self) -> int:
         print(f"[ГУДОК] {self.name} сигналит на своём фургоне с громкостью: ", self.honk_volume)
-        logger.info(f"[HORN] {self.name} honks, honk_volume={self.honk_volume}")
+        logger.info(f"[HORN] {self.name} horns, honk_volume={self.honk_volume}")
         return self.honk_volume

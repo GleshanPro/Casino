@@ -68,23 +68,23 @@ class TestWetBanditGoose:
     def test_WetBanditGoose_creation(self):
         """Test WetBanditGoose creation"""
         balance = ChipCollection([Chip(10)])
-        WetBanditGoose = WetBanditGoose("WarGus", 60, 3, balance)
-        assert WetBanditGoose.name == "WarGus"
-        assert WetBanditGoose.hp == 60
-        assert isinstance(WetBanditGoose, Goose)
+        wetBanditGoose = WetBanditGoose("WarGus", 60, 3, balance)
+        assert wetBanditGoose.name == "WarGus"
+        assert wetBanditGoose.hp == 60
+        assert isinstance(wetBanditGoose, Goose)
 
     def test_WetBanditGoose_attack_with_damage(self):
         """Test WetBanditGoose attack with specified damage"""
-        WetBanditGoose = WetBanditGoose("WarGus", 60, 3)
+        wetBanditGoose = WetBanditGoose("WarGus", 60, 3)
         player = Player("Alice", ChipCollection([Chip(100)]))
-        damage = WetBanditGoose.attack(player, 18)
+        damage = wetBanditGoose.attack(player, 18)
         assert damage == 18
 
-    def test_WetBanditGoose_attack_random_damage(self):
+    def test_wet_bandit_goose_rob_random_damage(self):
         """Test WetBanditGoose attack with random damage (8-20)"""
-        WetBanditGoose = WetBanditGoose("WarGus", 60, 3)
+        wetBanditGoose = WetBanditGoose("WarGus", 60, 3)
         player = Player("Alice", ChipCollection([Chip(100)]))
-        damage = WetBanditGoose.attack(player)
+        damage = wetBanditGoose.rob(player)
         assert 8 <= damage <= 20
 
 
@@ -94,22 +94,22 @@ class TestDriverGoose:
     def test_DriverGoose_creation(self):
         """Test DriverGoose creation"""
         balance = ChipCollection([Chip(15)])
-        DriverGoose = DriverGoose("HonkGus", 40, 4, balance)
-        assert DriverGoose.name == "HonkGus"
-        assert DriverGoose.hp == 40
-        assert isinstance(DriverGoose, Goose)
+        driverGoose = DriverGoose("HonkGus", 40, 4, balance)
+        assert driverGoose.name == "HonkGus"
+        assert driverGoose.hp == 40
+        assert isinstance(driverGoose, Goose)
 
     def test_DriverGoose_call_with_times(self):
         """Test DriverGoose __call__ with specified times"""
-        DriverGoose = DriverGoose("HonkGus", 40, 4)
-        initial_volume = DriverGoose.honk_volume
-        DriverGoose(3)
-        assert DriverGoose.honk_volume == initial_volume + 3
+        driverGoose = DriverGoose("HonkGus", 40, 4)
+        initial_volume = driverGoose.honk_volume
+        driverGoose(3)
+        assert driverGoose.honk_volume == initial_volume + 3
 
     def test_DriverGoose_call_random_times(self):
         """Test DriverGoose __call__ with random times (1-4)"""
-        DriverGoose = DriverGoose("HonkGus", 40, 4)
-        initial_volume = DriverGoose.honk_volume
-        DriverGoose()
-        assert DriverGoose.honk_volume >= initial_volume + 1
-        assert DriverGoose.honk_volume <= initial_volume + 4
+        driverGoose = DriverGoose("HonkGus", 40, 4)
+        initial_volume = driverGoose.honk_volume
+        driverGoose()
+        assert driverGoose.honk_volume >= initial_volume + 1
+        assert driverGoose.honk_volume <= initial_volume + 4
