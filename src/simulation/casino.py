@@ -126,7 +126,6 @@ class Casino:
         Execute one random event in the simulation.
         """
         event = random.choice(self.events)
-        print(event)
         event()
 
     def register_player(self, player: Player) -> None:
